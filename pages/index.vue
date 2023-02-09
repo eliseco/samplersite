@@ -59,6 +59,31 @@ export default {
           content: 'images/purple.png',
           caption: 'purple mesh sample',
         },
+        {
+          id: 7,
+          type: 'set',
+          content: [
+            {
+              id: 4,
+              type: 'sample',
+              content: 'images/purple_white.png',
+              caption: 'purple and white mesh sample',
+            },
+            {
+              id: 5,
+              type: 'sample',
+              content: 'images/purple_yellow.png',
+              caption: 'purple and yellow mesh sample',
+            },
+            {
+              id: 6,
+              type: 'sample',
+              content: 'images/purple.png',
+              caption: 'purple mesh sample',
+            },
+          ],
+          caption: 'lace carriage techniques',
+        },
       ],
       selectedIds: [],
     }
