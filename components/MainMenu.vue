@@ -1,17 +1,19 @@
 <template>
   <div class="main-menu">
     <div class="header">SAMPLER</div>
-    <div class="description">this is a general description of sampler</div>
-    <ul class="filter-list">
-      <li class="filter">this is a filter</li>
-      <li class="filter">this is another filter</li>
-    </ul>
+    <div class="sample-count">total number of samples: {{ numSamples }}</div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'MainMenu',
+  props: {
+    numSamples: {
+      type: Number,
+      required: true,
+    },
+  },
   computed: {},
   methods: {},
 }
@@ -20,7 +22,7 @@ export default {
 <style scoped>
 .main-menu {
   width: 100%;
-  height: 50%;
+  height: 20%;
   display: flex;
   flex-direction: column;
   gap: 1em;

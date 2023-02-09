@@ -14,6 +14,7 @@
   );
 
   --border-radius: 3px;
+  --border-color: #00ff;
   --padding: 0.5em;
 
   --text: #333333;
@@ -28,7 +29,10 @@ body {
 button {
   cursor: pointer;
   background: none;
-  border: none;
+  border: 1px solid black;
+  border-radius: var(--border-radius);
+  color: var(--text);
+  font-family: var(--font-family);
 }
 
 ::-webkit-scrollbar {
