@@ -59,6 +59,8 @@ export default {
         content: this.selectedSamples,
         caption: this.inputText,
       })
+      this.inputText = ''
+      //  this.selectedSamples = [];
     },
   },
 }
