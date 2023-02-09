@@ -110,6 +110,7 @@ export default {
     addNewSample(sample) {
       sample.id = this.allSamples.length
       this.allSamples.push(sample)
+      this.selectedIds = []
     },
   },
 }
