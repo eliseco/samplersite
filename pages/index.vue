@@ -1,12 +1,29 @@
 <template>
   <main>
-    <SampleBook :samples="allSamples" @toggleSample="updateSampleMaker" />
+    <SampleBook
+      :singles="singles"
+      :sets="sets"
+      @toggleSample="updateSelectedSamples"
+    />
     <div class="sidebar">
-      <MainMenu :num-samples="allSamples.length" />
-      <SampleMaker
-        :selected-samples="selectedSamples"
-        @addNewSample="addNewSample"
+      <div class="header">Sample Generator</div>
+      <div class="intro-message">
+        ← to create some new sets, select some samples from the sample book.
+      </div>
+      <div class="sample-count">
+        total samples: {{ singles.length + sets.length }}
+      </div>
+
+      <SampleBook
+        :singles="selectedSingles"
+        :sets="selectedSets"
+        :selectable="false"
       />
+
+      <div class="caption">
+        <textarea v-model="caption" rows="5" :disabled="!wip"></textarea>
+        <button :disabled="!wip" @click="addSet">create new sample</button>
+      </div>
     </div>
   </main>
 </template>
@@ -15,102 +32,52 @@
 export default {
   name: 'IndexPage',
   data: () => {
-    return {
-      allSamples: [
-        {
-          id: 0,
-          type: 'sample',
-          content: 'images/black_yellow.png',
-          caption: 'bland and yellow flyknit',
-        },
-        {
-          id: 1,
-          type: 'sample',
-          content: 'images/blue_white.png',
-          caption: 'blue and white flyknit',
-        },
-        {
-          id: 2,
-          type: 'sample',
-          content: 'images/green_green.png',
-          caption: 'green and green flyknit',
-        },
-        {
-          id: 3,
-          type: 'sample',
-          content: 'images/green_grey.png',
-          caption: 'green and grey flyknit',
-        },
-        {
-          id: 4,
-          type: 'sample',
-          content: 'images/purple_white.png',
-          caption: 'purple and white mesh sample',
-        },
-        {
-          id: 5,
-          type: 'sample',
-          content: 'images/purple_yellow.png',
-          caption: 'purple and yellow mesh sample',
-        },
-        {
-          id: 6,
-          type: 'sample',
-          content: 'images/purple.png',
-          caption: 'purple mesh sample',
-        },
-        {
-          id: 7,
-          type: 'set',
-          content: [
-            {
-              id: 4,
-              type: 'sample',
-              content: 'images/purple_white.png',
-              caption: 'purple and white mesh sample',
-            },
-            {
-              id: 5,
-              type: 'sample',
-              content: 'images/purple_yellow.png',
-              caption: 'purple and yellow mesh sample',
-            },
-            {
-              id: 6,
-              type: 'sample',
-              content: 'images/purple.png',
-              caption: 'purple mesh sample',
-            },
-          ],
-          caption: 'lace carriage techniques',
-        },
-      ],
-      selectedIds: [],
-    }
+    return {}
   },
   computed: {
-    selectedSamples: {
+    wip() {
+      return this.selectedSingles.length || this.selectedSets.length
+    },
+    singles() {
+      return this.$store.state.samples.singles
+    },
+    sets() {
+      return this.$store.state.samples.sets
+    },
+    selectedSingles() {
+      return this.$store.state.sampleMaker.selectedSingleIds?.map((sid) =>
+        this.$store.getters['samples/getSingleById'](sid)
+      )
+    },
+    selectedSets() {
+      return this.$store.state.sampleMaker.selectedSetIds?.map((sid) =>
+        this.$store.getters['samples/getSetById'](sid)
+      )
+    },
+    caption: {
       get() {
-        return this.allSamples.filter((s) => this.selectedIds.includes(s.id))
+        return this.$store.state.sampleMaker.caption
       },
-      set(newSelectedIds) {
-        this.selectedIds = newSelectedIds
+      set(caption) {
+        this.$store.commit('sampleMaker/updateCaption', caption)
       },
     },
   },
   methods: {
-    updateSampleMaker(sampleId) {
-      if (!this.selectedIds.includes(sampleId)) {
-        this.selectedIds.push(sampleId)
+    updateSelectedSamples({ type, sid }) {
+      if (type === 'single') {
+        this.$store.commit('sampleMaker/toggleSingle', sid)
       } else {
-        this.selectedIds = this.selectedIds.filter((sid) => sid !== sampleId)
+        this.$store.commit('sampleMaker/toggleSet', sid)
       }
     },
-
-    addNewSample(sample) {
-      sample.id = this.allSamples.length
-      this.allSamples.push(sample)
-      this.selectedIds = []
+    addSet() {
+      this.$store.commit('samples/addSet', {
+        singleIds: this.$store.state.sampleMaker.selectedSingleIds,
+        setIds: this.$store.state.sampleMaker.selectedSetIds,
+        caption: this.$store.state.sampleMaker.caption,
+      })
+      this.$store.commit('sampleMaker/clear')
     },
   },
 }
@@ -133,7 +100,37 @@ main {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  gap: 2em;
   width: 400px;
+  gap: 1em;
+}
+
+.header {
+  font-family: var(--font-family-condensed);
+  font-size: 5em;
+}
+
+.caption {
+  margin-top: auto;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  padding: var(--padding);
+  margin: 0;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: var(--border-radius);
+  font-family: var(--font-family);
+}
+
+button {
+  width: 100%;
+}
+
+button:disabled,
+textarea:disabled {
+  cursor: default;
+  opacity: 50%;
 }
 </style>

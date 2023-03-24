@@ -1,25 +1,11 @@
 <template>
-  <div class="sample-wrapper">
-    <div class="sample" :class="{ selected, small }" @click="toggleSample">
-      <div
-        v-if="type === 'sample'"
-        class="image-wrapper"
-        :style="{ backgroundImage: `url(${content})` }"
-      ></div>
-      <div v-if="type === 'set'" class="sample-stack">
-        <Sample
-          v-for="s in content"
-          :key="s.caption"
-          :sample-id="s.id"
-          :type="s.type"
-          :content="s.content"
-          :caption="s.caption"
-          :small="true"
-        >
-        </Sample>
-      </div>
-      <div class="caption">{{ caption }}</div>
-    </div>
+  <div
+    class="sample"
+    :class="{ selected, small: !selectable }"
+    @click="toggleSample"
+  >
+    <Single v-if="single" :content="single" />
+    <Set v-if="set" :content="set" />
   </div>
 </template>
 
@@ -27,42 +13,42 @@
 export default {
   name: 'SampleNode',
   props: {
-    sampleId: {
-      type: Number,
-      required: true,
-    },
-    type: {
-      type: String,
-      required: false,
-      default: 'sample',
-    },
-    content: {
-      type: [Object, Array, String],
+    single: {
+      type: Object,
       required: false,
       default: null,
     },
-    caption: {
-      type: String,
+    set: {
+      type: Object,
       required: false,
-      default: 'sample caption',
+      default: null,
     },
-    small: {
+    selectable: {
       type: Boolean,
       required: false,
-      default: false,
+      default: true,
     },
   },
-  data: () => {
-    return {
-      selected: false,
-    }
+  computed: {
+    selected() {
+      if (!this.selectable) return false
+      if (this.single) {
+        return this.$store.state.sampleMaker.selectedSingleIds.includes(
+          this.single.id
+        )
+      } else {
+        return this.$store.state.sampleMaker.selectedSetIds.includes(
+          this.set.id
+        )
+      }
+    },
   },
-  computed: {},
   methods: {
     toggleSample() {
-      if (!this.small) {
-        this.selected = !this.selected
-        this.$emit('toggleSample', this.sampleId, this.selected)
+      if (this.selectable) {
+        const type = this.single ? 'single' : 'set'
+        const sid = this.single ? this.single.id : this.set.id
+        this.$emit('toggleSample', { type, sid })
       }
     },
   },
@@ -83,35 +69,14 @@ export default {
   overflow-y: auto;
 }
 
-.sample-stack {
-  width: 100%;
-  overflow-y: auto;
-  align-content: flex-start;
-  display: grid;
-  gap: var(--padding);
-  grid-template-columns: repeat(auto-fill, minmax(min(6rem, 100%), 1fr));
-}
-
-.caption {
-  display: flex;
-  justify-content: center;
-  padding: var(--padding);
-}
-
 .small {
+  cursor: default;
   height: 200px;
   font-size: 0.75em;
   font-weight: 400;
 }
 
-.image-wrapper {
-  width: 100%;
-  height: 80%;
-  background-size: cover;
-  background-position: 60%;
-}
-
 .selected {
-  border: 3px solid var(--border-color);
+  outline: 2px solid var(--border-color);
 }
 </style>
