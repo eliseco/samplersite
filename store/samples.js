@@ -25,7 +25,15 @@ export const getters = {
     return state.sets.find((s) => s.id === setId)
   },
 
-  getParentsById(state, singleId) {
-    return state.sets.filter((set) => set.sampleIds.includes(singleId))
+  getParentsBySingleId: (state) => (singleId) => {
+    return state.sets
+      .filter((set) => set.setIds?.includes(singleId))
+      .map((set) => set.caption)
+  },
+
+  getParentsBySetId: (state) => (setId) => {
+    return state.sets
+      .filter((set) => set.setIds?.includes(setId))
+      .map((set) => set.caption)
   },
 }
