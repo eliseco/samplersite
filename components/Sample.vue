@@ -70,7 +70,7 @@ export default {
 }
 
 .small {
-  cursor: default;
+  cursor: inherit;
   height: 200px;
   font-size: 0.75em;
   font-weight: 400;
