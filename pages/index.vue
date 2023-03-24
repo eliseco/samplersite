@@ -72,7 +72,6 @@ export default {
       }
     },
     addSet() {
-      console.log(this.$store.getters['samples/getParentsBySingleId'](0))
       this.$store.commit('samples/addSet', {
         singleIds: this.$store.state.sampleMaker.selectedSingleIds,
         setIds: this.$store.state.sampleMaker.selectedSetIds,
