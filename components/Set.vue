@@ -14,7 +14,6 @@
         :selectable="false"
       />
     </div>
-    <div class="caption">{{ content.caption }}</div>
   </div>
 </template>
 
@@ -61,11 +60,5 @@ export default {
   display: grid;
   gap: var(--padding);
   grid-template-columns: repeat(auto-fill, minmax(min(6rem, 100%), 1fr));
-}
-
-.caption {
-  display: flex;
-  justify-content: center;
-  padding: var(--padding);
 }
 </style>

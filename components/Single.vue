@@ -4,8 +4,6 @@
       class="image-wrapper"
       :style="{ backgroundImage: `url(${content.image})` }"
     ></div>
-    <div class="caption">{{ content.caption }}</div>
-    <div class="parents"></div>
   </div>
 </template>
 
@@ -18,10 +16,6 @@ export default {
       required: true,
     },
   },
-  data: () => {
-    return {}
-  },
-  computed: {},
 }
 </script>
 
@@ -33,15 +27,9 @@ export default {
   height: 100%;
 }
 
-.caption {
-  display: flex;
-  justify-content: center;
-  padding: var(--padding);
-}
-
 .image-wrapper {
   width: 100%;
-  height: 80%;
+  height: 100%;
   background-size: cover;
   background-position: 60%;
 }
