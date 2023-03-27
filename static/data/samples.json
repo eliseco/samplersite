@@ -50,6 +50,12 @@
       "caption": "flyknit uppers"
     },
     {
+      "id": 4,
+      "singleIds": [],
+      "setIds": [2],
+      "caption": "projects"
+    },
+    {
       "id": 2,
       "singleIds": [],
       "setIds": [0, 1],
