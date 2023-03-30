@@ -1,12 +1,17 @@
 <template>
-  <div class="sample-book">
+  <div :class="{ samplebook: true, small: !selectable }">
     <Sample
-      v-for="s in samples"
-      :key="s.id"
-      :sample-id="s.id"
-      :type="s.type"
-      :content="s.content"
-      :caption="s.caption"
+      v-for="single in singles"
+      :key="'single' + single.id"
+      :single="single"
+      :selectable="selectable"
+      @toggleSample="$emit('toggleSample', $event)"
+    />
+    <Sample
+      v-for="set in sets"
+      :key="'set' + set.id"
+      :set="set"
+      :selectable="selectable"
       @toggleSample="$emit('toggleSample', $event)"
     />
   </div>
@@ -16,9 +21,20 @@
 export default {
   name: 'SampleBook',
   props: {
-    samples: {
+    singles: {
       type: Array,
-      default: null,
+      required: false,
+      default: () => [],
+    },
+    sets: {
+      type: Array,
+      required: false,
+      default: () => [],
+    },
+    selectable: {
+      type: Boolean,
+      required: false,
+      default: true,
     },
   },
   computed: {},
@@ -27,13 +43,17 @@ export default {
 </script>
 
 <style scoped>
-.sample-book {
+.samplebook {
   flex-grow: 1;
   align-content: flex-start;
   display: grid;
   gap: 1em;
   padding: var(--padding);
-  grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
   overflow-y: auto;
+}
+
+.small {
+  grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
 }
 </style>
