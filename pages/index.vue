@@ -13,6 +13,7 @@
       <div class="sample-count">
         total samples: {{ singles.length + sets.length }}
       </div>
+      <button @click="logSamples">download samples</button>
 
       <SampleBook
         :singles="selectedSingles"
@@ -29,6 +30,7 @@
 </template>
 
 <script>
+import { saveAs } from 'file-saver'
 export default {
   name: 'IndexPage',
   data: () => {
@@ -78,6 +80,13 @@ export default {
         caption: this.$store.state.sampleMaker.caption,
       })
       this.$store.commit('sampleMaker/clear')
+    },
+    logSamples() {
+      const samples = {
+        singles: this.$store.state.samples.singles,
+        sets: this.$store.state.samples.sets,
+      }
+      saveAs(new Blob([JSON.stringify(samples)]), 'samples.json')
     },
   },
 }
