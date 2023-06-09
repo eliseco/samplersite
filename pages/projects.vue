@@ -1,10 +1,10 @@
 <template>
-  <main>Welcome to Sampler, a project by Elise Co.</main>
+  <main>This page will show all projects within Sampler.</main>
 </template>
 
 <script>
 export default {
-  name: 'HomePage',
+  name: 'ProjectsPage',
   data: () => {
     return {}
   },

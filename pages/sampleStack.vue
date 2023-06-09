@@ -1,10 +1,10 @@
 <template>
-  <main>Welcome to Sampler, a project by Elise Co.</main>
+  <main>This page will show all samples and sets as a catalog.</main>
 </template>
 
 <script>
 export default {
-  name: 'HomePage',
+  name: 'SampleStack',
   data: () => {
     return {}
   },
