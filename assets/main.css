@@ -16,8 +16,18 @@
   --border-radius: 3px;
   --border-color: #00ff;
   --padding: 0.5em;
+  --topbar-height: 4em;
 
   --text: #333333;
+}
+
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -33,10 +43,6 @@ button {
   border-radius: var(--border-radius);
   color: var(--text);
   font-family: var(--font-family);
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 @keyframes fade-in {
