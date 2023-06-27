@@ -93,19 +93,6 @@ export default {
 </script>
 
 <style scoped>
-main {
-  margin-top: var(--topbar-height);
-  position: absolute;
-  width: 100%;
-  height: calc(100% - var(--topbar-height));
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 2em;
-  gap: 2em;
-  background: var(--background-gradient);
-}
-
 .sidebar {
   flex-shrink: 0;
   display: flex;

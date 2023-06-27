@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <div class="topbar-wrapper">
     <div class="left">
       <NuxtLink to="/"> Sampler </NuxtLink>
     </div>
@@ -9,11 +9,11 @@
       <NuxtLink to="/sampleStack"> Sample Stack </NuxtLink>
       <NuxtLink to="/sampleGenerator"> Sample Generator </NuxtLink>
     </div>
-  </main>
+  </div>
 </template>
 
 <style scoped>
-main {
+.topbar-wrapper {
   z-index: 1;
   position: fixed;
   width: 100%;

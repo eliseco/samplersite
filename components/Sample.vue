@@ -10,6 +10,7 @@
     </div>
 
     <div class="info">
+      <NuxtLink v-if="set" :to="'/sets/' + set.id"> view set </NuxtLink>
       <div class="title">{{ caption }}</div>
       <div v-if="selectable" class="parents">
         <span v-for="parent in parents" :key="parent.id" class="parent">
