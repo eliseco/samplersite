@@ -59,14 +59,5 @@ export default {
 .sample-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.hero-image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: 60%;
 }
 </style>
