@@ -1,6 +1,6 @@
 <template>
   <div class="card-wrapper">
-    <div class="card-inner" :class="{ flipped }" @click="flipCard">
+    <div class="card-inner" :class="{ flipped }">
       <div
         class="front-side"
         :style="{ backgroundImage: `url(${backgroundImage})` }"
@@ -10,11 +10,13 @@
           class="hero-image"
           :style="{ backgroundImage: `url(${heroImage})` }"
         ></div>
+        <div class="flip-button-front" @click="flipCard"></div>
       </div>
       <div class="back-side">
         <div class="description"></div>
         <div class="parents"></div>
         <div class="authors"></div>
+        <div class="flip-button-back" @click="flipCard"></div>
       </div>
     </div>
   </div>
@@ -87,7 +89,6 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
-  cursor: pointer;
   transition: transform 1s;
   transform-style: preserve-3d;
 }
@@ -112,8 +113,31 @@ export default {
 }
 
 .back-side {
+  border: 1px black solid;
   background-color: black;
   color: white;
   transform: rotateY(180deg);
+}
+
+.flip-button-front {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 30px 30px;
+  border-color: transparent transparent black transparent;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.flip-button-back {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 30px 30px 0;
+  border-color: transparent transparent white transparent;
+  bottom: 0;
+  left: 0;
+  position: absolute;
 }
 </style>
