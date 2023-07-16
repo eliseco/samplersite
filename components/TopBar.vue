@@ -6,7 +6,7 @@
     <div class="right">
       <NuxtLink to="/about"> About </NuxtLink>
       <NuxtLink to="/projects"> Projects </NuxtLink>
-      <NuxtLink to="/sampleStack"> Sample Stack </NuxtLink>
+      <NuxtLink to="/materialCatalog"> Material Catalog </NuxtLink>
       <NuxtLink to="/sampleGenerator"> Sample Generator </NuxtLink>
     </div>
   </div>

@@ -100,6 +100,7 @@ export default {
   width: 400px;
   height: 100%;
   gap: 1em;
+  padding: var(--padding);
 }
 
 .header {
