@@ -1,4 +1,4 @@
-import SAMPLES from '~/static/data/samples.json'
+import SAMPLES from '~/static/data/samples-test.json'
 
 export const state = () => ({
   singles: SAMPLES.singles,
