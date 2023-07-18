@@ -80,7 +80,7 @@ export default {
   background-color: transparent;
   width: var(--card-width);
   height: var(--card-height);
-  /* perspective: 1000px; */ /* 3d effect */
+  /* perspective: 1000px; 3d effect */
   display: flex;
   flex-direction: column;
 }
