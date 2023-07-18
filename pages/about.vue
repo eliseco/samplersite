@@ -1,5 +1,7 @@
 <template>
-  <main>This is an about page for Sampler.</main>
+  <main>
+    This is an about page for Sampler.
+  </main>
 </template>
 
 <script>
