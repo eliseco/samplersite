@@ -1,7 +1,6 @@
 <template>
   <main>
     This is an about page for Sampler.
-    <p>I'm testing netlify deployment</p>
   </main>
 </template>
 
