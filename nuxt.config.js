@@ -31,7 +31,15 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap" rel="stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet',
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet',
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&family=Righteous&family=Roboto:wght@400;700&display=swap" rel="stylesheet',
       },
     ],
   },
