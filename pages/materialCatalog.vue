@@ -19,7 +19,16 @@
       />
     </div>
     <div class="sample-grid">
-      <SampleCard v-for="sample in samples" :key="sample.id" />
+      <SampleCard
+        v-for="sample in samples"
+        :key="sample.id"
+        sid="#AA0001"
+        type="sample"
+        title="Sample Name"
+        :tags="['Tag 1', 'Tag 2']"
+        description="This is a description"
+        :authors="['Author 1', 'Author 2']"
+      />
     </div>
   </main>
 </template>
@@ -29,6 +38,7 @@ export default {
   name: 'MaterialCatalog',
   data: () => {
     return {
+      // lets move these to the sample store once that gets updated
       filters: {
         set: [],
         project: [],

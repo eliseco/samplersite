@@ -5,11 +5,21 @@
         class="front-side"
         :style="{ backgroundImage: `url(${backgroundImage})` }"
       >
-        <div class="title"></div>
+        <div class="tags">
+          <span v-for="tag in tags" :key="tag" class="tag">
+            {{ tag }}
+          </span>
+        </div>
+        <span class="sid">
+          {{ sid }}
+        </span>
         <div
           class="hero-image"
           :style="{ backgroundImage: `url(${heroImage})` }"
         ></div>
+        <span class="title">
+          {{ title }}
+        </span>
         <div class="flip-button-front" @click="flipCard"></div>
       </div>
       <div class="back-side">
@@ -26,10 +36,10 @@
 export default {
   name: 'SampleCard',
   props: {
-    id: {
+    sid: {
       type: String,
       required: false,
-      default: '',
+      default: '#AA0001',
     },
     type: {
       type: String,
@@ -56,7 +66,12 @@ export default {
       required: false,
       default: '',
     },
-    author: {
+    tags: {
+      type: Array,
+      required: false,
+      default: () => [],
+    },
+    authors: {
       type: Array,
       required: false,
       default: () => [],
@@ -102,18 +117,55 @@ export default {
   position: absolute;
   width: 100%;
   height: 100%;
+  padding: 0 15px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
 
 .front-side {
-  border: 1px var(--text) solid;
-  background-color: white;
-  color: black;
+  background-color: #f1f1f1;
+  color: var(--text);
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+
+.tag {
+  padding: 0 10px;
+  font-family: var(--rajdhani);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  background: white;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.sid {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+.hero-image {
+  background: #c4c4c4;
+  width: 240px;
+  height: 225px;
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: var(--rajdhani);
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .back-side {
-  border: 1px black solid;
   background-color: black;
   color: white;
   transform: rotateY(180deg);
@@ -124,7 +176,7 @@ export default {
   height: 0;
   border-style: solid;
   border-width: 0 0 30px 30px;
-  border-color: transparent transparent black transparent;
+  border-color: transparent transparent white transparent;
   bottom: 0;
   right: 0;
   position: absolute;
