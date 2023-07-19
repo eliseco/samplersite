@@ -1,7 +1,7 @@
 <template>
   <div class="topbar-wrapper">
     <div class="left">
-      <NuxtLink to="/"> Sampler </NuxtLink>
+      <NuxtLink to="/"> SAMPLER </NuxtLink>
     </div>
     <div class="right">
       <NuxtLink to="/about"> About </NuxtLink>
@@ -26,11 +26,13 @@
 }
 
 .left {
-  font-size: 2em;
+  font-family: var(--righteous);
+  font-size: 36px;
   justify-self: flex-start;
 }
 .right {
-  font-size: 1em;
+  font-family: var(--roboto);
+  font-size: 24px;
   margin-left: auto;
   display: flex;
   gap: 2em;

@@ -1,10 +1,25 @@
 <template>
   <main class="catalog-wrapper">
-    <div class="filters">Filters</div>
+    <div class="filters-wrapper">
+      <div class="sample-count">{{ sampleCount }} SAMPLES</div>
+      <FilterSet
+        v-model="filters.set"
+        title="Set"
+        :options="['set1', 'set2']"
+      />
+      <FilterSet
+        v-model="filters.project"
+        title="Project"
+        :options="['project1', 'project2']"
+      />
+      <FilterSet
+        v-model="filters.material"
+        title="Material Type"
+        :options="['material1', 'material2']"
+      />
+    </div>
     <div class="sample-grid">
-      <div v-for="sample in samples" :key="sample.id" class="sample-cell">
-        <SampleCard />
-      </div>
+      <SampleCard v-for="sample in samples" :key="sample.id" />
     </div>
   </main>
 </template>
@@ -13,42 +28,50 @@
 export default {
   name: 'MaterialCatalog',
   data: () => {
-    return {}
+    return {
+      filters: {
+        set: [],
+        project: [],
+        material: [],
+      },
+    }
   },
   computed: {
     samples() {
       return this.$store.state.samples.singles
+    },
+    sampleCount() {
+      return this.samples.length
     },
   },
 }
 </script>
 
 <style scoped>
-.filters {
+.filters-wrapper {
   flex-shrink: 0;
-  width: 350px;
+  width: var(--card-width);
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
   padding: var(--padding);
-  border-right: 1px var(--text) solid;
+  border-right: 1px var(--border-light) solid;
+  font-family: var(--roboto);
 }
-
+.sample-count {
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: var(--padding);
+  border-bottom: 1px var(--border-light) solid;
+}
 .sample-grid {
   flex-grow: 1;
+  padding: var(--padding);
   align-content: flex-start;
   display: grid;
-  gap: 1em;
-  padding: var(--padding);
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(min(var(--card-width), calc(100% - 350px)), 1fr)
-  );
+  grid-gap: var(--padding);
+  grid-template-columns: repeat(auto-fill, var(--card-width));
   overflow-y: auto;
-}
-
-.sample-cell {
-  display: flex;
-  justify-content: center;
 }
 </style>
