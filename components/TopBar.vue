@@ -4,10 +4,8 @@
       <NuxtLink to="/"> Sampler </NuxtLink>
     </div>
     <div class="right">
-      <NuxtLink to="/about"> About </NuxtLink>
-      <NuxtLink to="/projects"> Projects </NuxtLink>
       <NuxtLink to="/materialCatalog"> Material Catalog </NuxtLink>
-      <NuxtLink to="/sampleGenerator"> Sample Generator </NuxtLink>
+      <NuxtLink to="/about"> About </NuxtLink>
     </div>
   </div>
 </template>
