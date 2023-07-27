@@ -1,5 +1,7 @@
 # samplersite
 
+A deployment of the prototype can be found [here](https://main--splendorous-pika-2c162a.netlify.app/)
+
 ## Build Setup
 
 ```bash
