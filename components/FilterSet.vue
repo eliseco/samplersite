@@ -69,7 +69,7 @@ export default {
   cursor: pointer;
 }
 .filter-header {
-  font-size: 20px;
+  font-size: 0.875rem;
   font-weight: 700;
   display: flex;
   justify-content: space-between;

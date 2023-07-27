@@ -2,32 +2,19 @@
   <main class="catalog-wrapper">
     <div class="filters-wrapper">
       <div class="sample-count">{{ sampleCount }} SAMPLES</div>
-      <FilterSet
-        v-model="filters.set"
-        title="Set"
-        :options="['set1', 'set2']"
-      />
-      <FilterSet
-        v-model="filters.project"
-        title="Project"
-        :options="['project1', 'project2']"
-      />
-      <FilterSet
-        v-model="filters.material"
-        title="Material Type"
-        :options="['material1', 'material2']"
-      />
+      <FilterSet v-model="filters.tags" title="Tags" :options="allTags" />
     </div>
     <div class="sample-grid">
       <SampleCard
         v-for="sample in samples"
         :key="sample.id"
-        sid="#AA0001"
+        :sid="sample.id"
         type="sample"
-        title="Sample Name"
-        :tags="['Tag 1', 'Tag 2']"
-        description="This is a description"
-        :authors="['Author 1', 'Author 2']"
+        :title="sample.title"
+        :hero-image="sample.image"
+        :tags="sample.tags"
+        :description="sample.description"
+        :authors="sample.author"
       />
     </div>
   </main>
@@ -40,18 +27,19 @@ export default {
     return {
       // lets move these to the sample store once that gets updated
       filters: {
-        set: [],
-        project: [],
-        material: [],
+        tags: [],
       },
     }
   },
   computed: {
     samples() {
-      return this.$store.state.samples.singles
+      return this.$store.state.samples.samples
     },
     sampleCount() {
       return this.samples.length
+    },
+    allTags() {
+      return [...new Set(this.samples.map((s) => s.tags.split(',')).flat(1))]
     },
   },
 }
@@ -70,7 +58,7 @@ export default {
   font-family: var(--roboto);
 }
 .sample-count {
-  font-size: 24px;
+  font-size: 0.875rem;
   font-weight: 400;
   padding-bottom: var(--padding);
   border-bottom: 1px var(--border-light) solid;

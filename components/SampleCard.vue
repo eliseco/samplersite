@@ -6,16 +6,16 @@
         :style="{ backgroundImage: `url(${backgroundImage})` }"
       >
         <div class="tags">
-          <span v-for="tag in tags" :key="tag" class="tag">
+          <div v-for="tag in splitTags" :key="tag" class="tag">
             {{ tag }}
-          </span>
+          </div>
         </div>
         <span class="sid">
-          {{ sid }}
+          {{ paddedId }}
         </span>
         <div
           class="hero-image"
-          :style="{ backgroundImage: `url(${heroImage})` }"
+          :style="{ backgroundImage: `url(images/samples/${heroImage})` }"
         ></div>
         <span class="title">
           {{ title }}
@@ -23,9 +23,27 @@
         <div class="flip-button-front" @click="flipCard"></div>
       </div>
       <div class="back-side">
-        <div class="description"></div>
-        <div class="parents"></div>
-        <div class="authors"></div>
+        <div class="description-wrapper">
+          <div class="header">Description</div>
+          <div class="description">
+            {{ description }}
+          </div>
+        </div>
+
+        <div class="parents-wrapper">
+          <div class="header">Part of</div>
+          <div class="parents"></div>
+        </div>
+
+        <div class="authors-wrapper">
+          <div class="header">Made by</div>
+          <div class="authors">
+            <div v-for="author in splitAuthors" :key="author" class="author">
+              {{ author }}
+            </div>
+          </div>
+        </div>
+
         <div class="flip-button-back" @click="flipCard"></div>
       </div>
     </div>
@@ -37,9 +55,9 @@ export default {
   name: 'SampleCard',
   props: {
     sid: {
-      type: String,
+      type: Number,
       required: false,
-      default: '#AA0001',
+      default: 0,
     },
     type: {
       type: String,
@@ -67,20 +85,31 @@ export default {
       default: '',
     },
     tags: {
-      type: Array,
+      type: String,
       required: false,
-      default: () => [],
+      default: '',
     },
     authors: {
-      type: Array,
+      type: String,
       required: false,
-      default: () => [],
+      default: '',
     },
   },
   data() {
     return {
       flipped: false,
     }
+  },
+  computed: {
+    splitTags() {
+      return this.tags.length ? this.tags.split(',') : []
+    },
+    splitAuthors() {
+      return this.authors.length ? this.authors.split(',') : []
+    },
+    paddedId() {
+      return '#' + String(this.sid).padStart(4, '0')
+    },
   },
   methods: {
     flipCard() {
@@ -120,6 +149,7 @@ export default {
   padding: 0 15px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  overflow: hidden;
 }
 
 .front-side {
@@ -132,10 +162,13 @@ export default {
   flex-direction: row;
   justify-content: flex-end;
   gap: 8px;
+  height: 32px;
   padding-bottom: 16px;
+  overflow-x: auto;
 }
 
 .tag {
+  white-space: nowrap;
   padding: 0 10px;
   font-family: var(--rajdhani);
   font-size: 12px;
@@ -157,18 +190,57 @@ export default {
   width: 240px;
   height: 225px;
   flex-shrink: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .title {
   font-family: var(--rajdhani);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
+  line-height-step: 50%;
 }
 
 .back-side {
   background-color: black;
   color: white;
   transform: rotateY(180deg);
+  font-family: var(--roboto);
+  font-size: 0.75rem;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  width: 100%;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-bottom: 1px white solid;
+  padding: 0.25rem 0;
+}
+
+.description {
+  padding: 0.25rem 0;
+  max-height: 4rem;
+  overflow-y: auto;
+}
+
+.parents {
+  padding: 0.25rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.authors {
+  padding: 0.25rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .flip-button-front {

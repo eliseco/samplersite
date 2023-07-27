@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 .filter-button {
-  font-size: 20px;
+  font-size: 0.875rem;
   font-weight: 400;
   display: flex;
   justify-content: space-between;
