@@ -1,9 +1,10 @@
-import SAMPLES from '~/static/data/samples-test.json'
+import SAMPLES from '~/static/data/samples.json'
 
 export const state = () => ({
-  singles: SAMPLES.singles,
-  sets: SAMPLES.sets,
+  samples: SAMPLES,
 })
+
+// ---------------------- all still old -----------------------------
 
 export const mutations = {
   addSet(state, { singleIds, setIds, caption }) {
@@ -17,6 +18,10 @@ export const mutations = {
 }
 
 export const getters = {
+  getAllSamples: (state) => {
+    return state.samples
+  },
+
   getSingleById: (state) => (singleId) => {
     return state.singles.find((s) => s.id === singleId)
   },
