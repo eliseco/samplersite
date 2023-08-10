@@ -1,20 +1,21 @@
 <template>
   <main class="catalog-wrapper">
     <div class="filters-wrapper">
-      <div class="sample-count">{{ sampleCount }} SAMPLES</div>
+      <div class="card-count">{{ cardCount }} SAMPLES</div>
       <FilterSet v-model="filters.tags" title="Tags" :options="allTags" />
     </div>
     <div class="sample-grid">
       <SampleCard
-        v-for="sample in samples"
-        :key="sample.id"
-        :sid="sample.id"
-        type="sample"
-        :title="sample.title"
-        :hero-image="sample.image"
-        :tags="sample.tags"
-        :description="sample.description"
-        :authors="sample.author"
+        v-for="(card, i) in allCards"
+        :key="i"
+        :sid="card.id"
+        :type="card.type"
+        :title="card.title"
+        :hero-image="card.heroImages[0]"
+        :tags="card.tags"
+        :description="card.description"
+        :authors="card.author"
+        :background-image="card.type === 'project' ? card.background : null"
       />
     </div>
   </main>
@@ -32,14 +33,14 @@ export default {
     }
   },
   computed: {
-    samples() {
-      return this.$store.state.samples.samples
+    allCards() {
+      return this.$store.getters['samples/getAllCards']
     },
-    sampleCount() {
-      return this.samples.length
+    cardCount() {
+      return this.allCards.length
     },
     allTags() {
-      return [...new Set(this.samples.map((s) => s.tags.split(',')).flat(1))]
+      return [...new Set(this.allCards.map((s) => s.tags.split(',')).flat(1))]
     },
   },
 }

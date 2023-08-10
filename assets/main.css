@@ -11,7 +11,8 @@
 
   --border-dark: black;
   --border-light: #d9d9d9;
-  --text: black;
+  --text-dark: black;
+  --text-light: white;
 
   --padding: 30px;
   --topbar-height: 90px;

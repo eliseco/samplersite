@@ -39,7 +39,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px var(--text) solid;
+  border-bottom: 1px var(--border-light) solid;
   background: var(--background-gradient);
 }
 
@@ -65,6 +65,6 @@ export default {
 }
 
 .active {
-  border-bottom: 1px var(--text) solid;
+  border-bottom: 1px var(--border-dark) solid;
 }
 </style>

@@ -1,30 +1,36 @@
 import SAMPLES from '~/static/data/samples.json'
+import PROJECTS from '~/static/data/projects.json'
 
 export const state = () => ({
   samples: SAMPLES,
+  projects: PROJECTS,
 })
 
-// ---------------------- all still old -----------------------------
-
-export const mutations = {
-  addSet(state, { singleIds, setIds, caption }) {
-    state.sets.push({
-      id: state.sets?.length,
-      singleIds,
-      setIds,
-      caption,
-    })
-  },
-}
+export const mutations = {}
 
 export const getters = {
-  getAllSamples: (state) => {
-    return state.samples
+  getAllCards: (state) => {
+    return [...state.samples].concat([...state.projects])
   },
 
-  getSingleById: (state) => (singleId) => {
-    return state.singles.find((s) => s.id === singleId)
+  getSampleById: (state) => (sampleId) => {
+    return state.samples.find((s) => s.id === sampleId)
   },
+
+  getProjectById: (state) => (projectId) => {
+    return state.projects.find((p) => String(p.id) === projectId)
+  },
+
+  getRandomCards: (state, getters) => (n) => {
+    const indices = []
+    while (indices.length < n) {
+      const randomIndex = Math.floor(Math.random() * getters.getAllCards.length)
+      if (!indices.includes(randomIndex)) indices.push(randomIndex)
+    }
+    return indices.map((i) => getters.getAllCards[i])
+  },
+
+  // ---------------------- all still old -----------------------------
 
   getSetById: (state) => (setId) => {
     return state.sets.find((s) => s.id === setId)

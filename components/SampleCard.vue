@@ -3,7 +3,11 @@
     <div class="card-inner" :class="{ flipped }">
       <div
         class="front-side"
-        :style="{ backgroundImage: `url(${backgroundImage})` }"
+        :class="{
+          sample: type === 'sample',
+          project: type === 'project',
+        }"
+        :style="{ backgroundImage: background }"
       >
         <div class="tags">
           <div v-for="tag in splitTags" :key="tag" class="tag">
@@ -13,12 +17,12 @@
         <span class="sid">
           {{ paddedId }}
         </span>
-        <div
-          class="hero-image"
-          :style="{ backgroundImage: `url(images/samples/${heroImage})` }"
-        ></div>
+        <div class="hero-image" :style="{ backgroundImage: hero }"></div>
         <span class="title">
           {{ title }}
+          <NuxtLink v-if="type !== 'sample'" :to="'/sets/' + sid">
+            <img src="~/static/ui-elements/link-arrow.svg" alt="" />
+          </NuxtLink>
         </span>
         <div class="flip-button-front" @click="flipCard"></div>
       </div>
@@ -108,7 +112,28 @@ export default {
       return this.authors.length ? this.authors.split(',') : []
     },
     paddedId() {
+      if (this.type === 'project') {
+        return '#P' + String(this.sid).padStart(3, '0')
+      }
       return '#' + String(this.sid).padStart(4, '0')
+    },
+    hero() {
+      if (this.type === 'sample') {
+        return `url(/images/samples/${this.heroImage})`
+      } else if (this.type === 'project') {
+        return `url(/images/projects/${this.heroImage})`
+      } else {
+        return null
+      }
+    },
+    background() {
+      if (this.type === 'sample') {
+        return null
+      } else if (this.type === 'project') {
+        return `url(/images/background/${this.backgroundImage})`
+      } else {
+        return null
+      }
     },
   },
   methods: {
@@ -127,6 +152,7 @@ export default {
   /* perspective: 1000px; 3d effect */
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
 }
 
 .card-inner {
@@ -146,33 +172,44 @@ export default {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 0 15px;
+  padding: 0 10px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   overflow: hidden;
 }
 
 .front-side {
-  background-color: #f1f1f1;
-  color: var(--text);
+  background: #f1f1f1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.front-side.sample {
+  color: var(--text-dark);
+}
+
+.front-side.project {
+  color: var(--text-light);
 }
 
 .tags {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 8px;
   height: 32px;
   padding-bottom: 16px;
-  overflow-x: auto;
+  overflow-x: hidden;
+  color: var(--text-dark);
 }
 
 .tag {
+  text-transform: capitalize;
   white-space: nowrap;
   padding: 0 10px;
-  font-family: var(--rajdhani);
-  font-size: 12px;
-  font-weight: 500;
+  font-family: var(--roboto);
+  font-size: 0.75rem;
+  font-weight: 300;
   letter-spacing: 1.2px;
   background: white;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
@@ -180,25 +217,33 @@ export default {
 
 .sid {
   font-family: Roboto;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 1.2px;
 }
 
 .hero-image {
   background: #c4c4c4;
-  width: 240px;
-  height: 225px;
+  width: 250px;
+  height: 190px;
+  margin: 6px 0;
   flex-shrink: 0;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .title {
+  display: flex;
+  gap: 6px;
   font-family: var(--rajdhani);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height-step: 50%;
+}
+
+a {
+  display: flex;
+  align-content: center;
 }
 
 .back-side {
@@ -252,6 +297,7 @@ export default {
   bottom: 0;
   right: 0;
   position: absolute;
+  cursor: pointer;
 }
 
 .flip-button-back {
@@ -263,5 +309,6 @@ export default {
   bottom: 0;
   left: 0;
   position: absolute;
+  cursor: pointer;
 }
 </style>
