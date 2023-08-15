@@ -64,6 +64,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: var(--padding);
+  overflow-y: auto;
 }
 
 .header {
@@ -73,6 +74,7 @@ export default {
 }
 
 .hero-images {
+  flex-shrink: 0;
   display: flex;
   flex-direction: row;
   overflow-x: auto;
@@ -92,6 +94,7 @@ export default {
 }
 
 .children {
+  flex-shrink: 0;
   display: flex;
   flex-direction: row;
   gap: var(--padding);
