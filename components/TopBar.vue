@@ -65,6 +65,6 @@ export default {
 }
 
 .active {
-  border-bottom: 1px black solid;
+  text-decoration: underline;
 }
 </style>
