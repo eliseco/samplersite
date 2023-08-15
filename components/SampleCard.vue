@@ -10,7 +10,12 @@
         :style="{ backgroundImage: background }"
       >
         <div class="tags">
-          <div v-for="tag in splitTags" :key="tag" class="tag">
+          <div
+            v-for="tag in splitTags"
+            :key="tag"
+            class="tag"
+            :class="{ active: activeTags?.includes(tag) }"
+          >
             {{ tag }}
           </div>
         </div>
@@ -36,15 +41,24 @@
 
         <div class="parents-wrapper">
           <div class="header">Part of</div>
-          <div class="parents"></div>
+          <div class="parents">
+            <NuxtLink
+              v-for="parent in parents"
+              :key="parent.id"
+              :to="'/sets/' + parent.id"
+              class="parent"
+            >
+              {{ parent.title }}
+            </NuxtLink>
+          </div>
         </div>
 
         <div class="authors-wrapper">
           <div class="header">Made by</div>
           <div class="authors">
-            <div v-for="author in splitAuthors" :key="author" class="author">
+            <span v-for="author in splitAuthors" :key="author" class="author">
               {{ author }}
-            </div>
+            </span>
           </div>
         </div>
 
@@ -98,6 +112,11 @@ export default {
       required: false,
       default: '',
     },
+    activeTags: {
+      type: Array,
+      required: false,
+      default: () => {},
+    },
   },
   data() {
     return {
@@ -134,6 +153,10 @@ export default {
       } else {
         return null
       }
+    },
+    parents() {
+      if (!this.type === 'sample') return []
+      return this.$store.getters['samples/getParentsBySampleId'](this.sid)
     },
   },
   methods: {
@@ -215,6 +238,10 @@ export default {
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.tag.active {
+  background: var(--active-green);
+}
+
 .sid {
   font-family: Roboto;
   font-size: 0.75rem;
@@ -279,6 +306,15 @@ a {
   flex-wrap: wrap;
   gap: 0.75rem;
 }
+.parent {
+  white-space: nowrap;
+  padding: 2px 6px;
+  font-family: var(--roboto);
+  font-size: 0.75rem;
+  font-weight: 300;
+  background: var(--active-green);
+  color: black;
+}
 
 .authors {
   padding: 0.25rem 0;
@@ -293,7 +329,7 @@ a {
   height: 0;
   border-style: solid;
   border-width: 0 0 30px 30px;
-  border-color: transparent transparent white transparent;
+  border-color: transparent transparent var(--grid-bg) transparent;
   bottom: 0;
   right: 0;
   position: absolute;
@@ -305,7 +341,7 @@ a {
   height: 0;
   border-style: solid;
   border-width: 0 30px 30px 0;
-  border-color: transparent transparent white transparent;
+  border-color: transparent transparent var(--grid-bg) transparent;
   bottom: 0;
   left: 0;
   position: absolute;

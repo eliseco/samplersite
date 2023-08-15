@@ -30,19 +30,19 @@ export const getters = {
     return indices.map((i) => getters.getAllCards[i])
   },
 
+  getParentsBySampleId: (state, getters) => (singleId) => {
+    const parents = []
+    state.projects.forEach((set) => {
+      if (set.singleIds?.includes(singleId)) parents.push(set)
+      // parents = parents.concat(getters.getParentsBySetId(set.id))
+    })
+    return [...new Set(parents)]
+  },
+
   // ---------------------- all still old -----------------------------
 
   getSetById: (state) => (setId) => {
     return state.sets.find((s) => s.id === setId)
-  },
-
-  getParentsBySingleId: (state, getters) => (singleId) => {
-    let parents = []
-    state.sets.forEach((set) => {
-      if (set.singleIds?.includes(singleId)) parents.push(set)
-      parents = parents.concat(getters.getParentsBySetId(set.id))
-    })
-    return [...new Set(parents)]
   },
 
   getParentsBySetId: (state) => (setId) => {

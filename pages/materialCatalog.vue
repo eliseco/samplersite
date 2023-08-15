@@ -1,12 +1,15 @@
 <template>
   <main class="catalog-wrapper">
     <div class="filters-wrapper">
-      <div class="card-count">{{ cardCount }} SAMPLES</div>
+      <div class="card-count">
+        <span v-if="filters.tags.length"> {{ filteredCards.length }} / </span>
+        {{ totalCardCount }} SAMPLES
+      </div>
       <FilterSet v-model="filters.tags" title="Tags" :options="allTags" />
     </div>
     <div class="sample-grid">
       <SampleCard
-        v-for="(card, i) in allCards"
+        v-for="(card, i) in filteredCards"
         :key="i"
         :sid="card.id"
         :type="card.type"
@@ -16,6 +19,7 @@
         :description="card.description"
         :authors="card.author"
         :background-image="card.type === 'project' ? card.background : null"
+        :active-tags="activeTags"
       />
     </div>
   </main>
@@ -36,11 +40,26 @@ export default {
     allCards() {
       return this.$store.getters['samples/getAllCards']
     },
-    cardCount() {
+    totalCardCount() {
       return this.allCards.length
     },
     allTags() {
       return [...new Set(this.allCards.map((s) => s.tags.split(',')).flat(1))]
+    },
+    filteredCards() {
+      if (!this.filters.tags.length) return this.allCards
+      const cards = []
+      this.filters.tags.forEach((tag) => {
+        this.allCards.forEach((card) => {
+          if (card.tags.split(',').includes(tag)) {
+            cards.push(card)
+          }
+        })
+      })
+      return cards
+    },
+    activeTags() {
+      return this.filters.tags
     },
   },
 }
