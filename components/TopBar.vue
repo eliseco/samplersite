@@ -65,6 +65,6 @@ export default {
 }
 
 .active {
-  border-bottom: 1px var(--border-dark) solid;
+  border-bottom: 1px black solid;
 }
 </style>
