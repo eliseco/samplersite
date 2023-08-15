@@ -235,7 +235,6 @@ export default {
   font-weight: 300;
   letter-spacing: 1.2px;
   background: white;
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .tag.active {
