@@ -2,7 +2,7 @@
   <main class="homepage-wrapper">
     <div class="welcome-header">
       <span class="header"> welcome </span>
-      <button class="shuffle" @click="getRandomCards">shuffle cards</button>
+      <span class="shuffle" @click="getRandomCards">shuffle cards</span>
     </div>
     <div class="card-shuffle">
       <SampleCard
@@ -59,7 +59,17 @@ export default {
 .welcome-header {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
+}
+
+.shuffle {
+  width: fit-content;
+  display: flex;
+  padding: 4px 8px;
+  background: var(--active-green);
+  outline: 1px solid black;
+  cursor: pointer;
 }
 
 .card-shuffle {
