@@ -282,7 +282,7 @@ a {
   padding-top: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .header {
@@ -295,7 +295,7 @@ a {
 
 .description {
   padding: 0.25rem 0;
-  max-height: 4rem;
+  max-height: 5rem;
   overflow-y: auto;
 }
 
