@@ -25,6 +25,9 @@
   --card-height: 330px;
 
   --page-max-width: 1512px;
+
+  --line-grid: linear-gradient(var(--grid-lines) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-lines) 1px, transparent 1px);
 }
 
 html {
@@ -43,8 +46,7 @@ body {
   background-position: -1px -1px;
   background-size: 30px 30px;
   background-color: var(--grid-bg);
-  background-image: linear-gradient(var(--grid-lines) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-lines) 1px, transparent 1px);
+  background-image: var(--line-grid);
   background-repeat: repeat;
 }
 
