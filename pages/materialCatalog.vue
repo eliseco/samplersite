@@ -56,7 +56,7 @@ export default {
           }
         })
       })
-      return cards
+      return [...new Set(cards)]
     },
     activeTags() {
       return this.filters.tags
