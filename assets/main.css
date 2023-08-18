@@ -9,9 +9,15 @@
   --rajdhani: 'Rajdhani', sans-serif;
   --righteous: 'Righteous', sans-serif;
 
-  --border-dark: black;
-  --border-light: #d9d9d9;
-  --text: black;
+  --border-dark: #979797;
+  --border-light: var(--border-dark);
+  --text-dark: black;
+  --text-light: white;
+
+  --grid-bg: #c4c4c4;
+  --grid-lines: rgba(245, 245, 245, 0.2);
+
+  --active-green: #05ff00;
 
   --padding: 30px;
   --topbar-height: 90px;
@@ -19,6 +25,9 @@
   --card-height: 330px;
 
   --page-max-width: 1512px;
+
+  --line-grid: linear-gradient(var(--grid-lines) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-lines) 1px, transparent 1px);
 }
 
 html {
@@ -34,6 +43,11 @@ body {
   margin: 0;
   color: var(--text);
   font-family: var(--font-family);
+  background-position: -1px -1px;
+  background-size: 30px 30px;
+  background-color: var(--grid-bg);
+  background-image: var(--line-grid);
+  background-repeat: repeat;
 }
 
 a:link {

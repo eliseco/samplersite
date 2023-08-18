@@ -1,0 +1,31 @@
+[
+  {
+    "id": 0,
+    "type": "project",
+    "singleIds": [4, 5, 6, 7, 8],
+    "setIds": [],
+    "title": "Flyknit Prototype",
+    "description": "Analyzing \"high-tech\" Nike shoe, reverse engineering and making our own version on low-tech mechanical machines",
+    "author": "Elise Co, Martin Bernard, Keda Jiang",
+    "tags": "knit, prototype, garment",
+    "heroImages": [
+      "IMG_5044.jpg",
+      "IMG_4982.JPG",
+      "F13FC28F-EAA3-4CB0-BD71-C326C5E54D91.jpg"
+    ],
+    "processImages": [
+      "DSC_6977.JPG",
+      "DSC_7036.JPG",
+      "IMG_4025.jpg",
+      "IMG_6067.JPG"
+    ],
+    "background": "bg1.png",
+    "researchQuestions": [
+      "Can we replicate a \"high-tech\" shoe using \"low-tech\" manual knitting machines?",
+      "What are the knit structures that make up Nike Flyknit technology?",
+      "What is a prototype?"
+    ],
+    "date": "07/2019",
+    "external_link": ""
+  }
+]

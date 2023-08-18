@@ -1,6 +1,5 @@
 <template>
   <label :for="value" class="filter-button">
-    {{ label }}
     <input
       :id="value"
       type="checkbox"
@@ -8,6 +7,7 @@
       @input="(event) => $emit('toggleCheck', event.target.checked)"
     />
     <span class="indicator" />
+    <span class="label"> {{ label }} </span>
   </label>
 </template>
 
@@ -36,10 +36,14 @@ export default {
   font-size: 0.875rem;
   font-weight: 400;
   display: flex;
-  justify-content: space-between;
+  gap: 5px;
   align-items: center;
   cursor: pointer;
   user-select: none;
+}
+
+.label {
+  text-transform: capitalize;
 }
 
 input {
@@ -49,14 +53,12 @@ input {
 
 .indicator {
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: white;
-  border: 1px var(--border-dark) solid;
+  width: 10px;
+  height: 10px;
+  border: 1px black solid;
 }
 
 input:checked ~ .indicator {
-  background-color: black;
+  background-color: var(--active-green);
 }
 </style>
