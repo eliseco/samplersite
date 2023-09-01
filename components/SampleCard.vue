@@ -138,9 +138,13 @@ export default {
     },
     hero() {
       if (this.type === 'sample') {
-        return `url(/images/samples/${this.heroImage})`
+        /* return `url(/images/samples/${this.heroImage})` */
+        return 'url(/images/samples/' + encodeURIComponent(this.heroImage) + ')'
       } else if (this.type === 'project') {
-        return `url(/images/projects/${this.heroImage})`
+        /* return `url(/images/projects/${this.heroImage})` */
+        return (
+          'url(/images/projects/' + encodeURIComponent(this.heroImage) + ')'
+        )
       } else {
         return null
       }
@@ -149,7 +153,12 @@ export default {
       if (this.type === 'sample') {
         return null
       } else if (this.type === 'project') {
-        return `url(/images/background/${this.backgroundImage})`
+        /* return `url(/images/background/${this.backgroundImage})` */
+        return (
+          'url(/images/background/' +
+          encodeURIComponent(this.backgroundImage) +
+          ')'
+        )
       } else {
         return null
       }
