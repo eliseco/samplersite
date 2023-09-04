@@ -138,13 +138,9 @@ export default {
     },
     hero() {
       if (this.type === 'sample') {
-        /* return `url(/images/samples/${this.heroImage})` */
-        return 'url(/images/samples/' + encodeURIComponent(this.heroImage) + ')'
+        return `url(/images/samples/${encodeURIComponent(this.heroImage)})`
       } else if (this.type === 'project') {
-        /* return `url(/images/projects/${this.heroImage})` */
-        return (
-          'url(/images/projects/' + encodeURIComponent(this.heroImage) + ')'
-        )
+        return `url(/images/projects/${encodeURIComponent(this.heroImage)})`
       } else {
         return null
       }
@@ -153,12 +149,9 @@ export default {
       if (this.type === 'sample') {
         return null
       } else if (this.type === 'project') {
-        /* return `url(/images/background/${this.backgroundImage})` */
-        return (
-          'url(/images/background/' +
-          encodeURIComponent(this.backgroundImage) +
-          ')'
-        )
+        return `url(/images/background/${encodeURIComponent(
+          this.backgroundImage
+        )})`
       } else {
         return null
       }
@@ -205,7 +198,8 @@ export default {
   width: 100%;
   height: 100%;
   padding: 0 10px;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
   overflow: hidden;
 }
@@ -314,6 +308,7 @@ a {
   flex-wrap: wrap;
   gap: 0.75rem;
 }
+
 .parent {
   white-space: nowrap;
   padding: 2px 6px;
