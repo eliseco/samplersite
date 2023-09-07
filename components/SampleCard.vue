@@ -69,6 +69,13 @@
 </template>
 
 <script>
+// handle strings/filenames with spaces and parens
+function fixedEncodeURIComponent(str) {
+  return encodeURIComponent(str).replace(/[!'()*]/g, function (c) {
+    return '%' + c.charCodeAt(0).toString(16)
+  })
+}
+
 export default {
   name: 'SampleCard',
   props: {
@@ -138,9 +145,11 @@ export default {
     },
     hero() {
       if (this.type === 'sample') {
-        return `url(/images/samples/${encodeURIComponent(this.heroImage)})`
+        return `url(/images/samples/${fixedEncodeURIComponent(this.heroImage)})`
       } else if (this.type === 'project') {
-        return `url(/images/projects/${encodeURIComponent(this.heroImage)})`
+        return `url(/images/projects/${fixedEncodeURIComponent(
+          this.heroImage
+        )})`
       } else {
         return null
       }
@@ -149,7 +158,7 @@ export default {
       if (this.type === 'sample') {
         return null
       } else if (this.type === 'project') {
-        return `url(/images/background/${encodeURIComponent(
+        return `url(/images/background/${fixedEncodeURIComponent(
           this.backgroundImage
         )})`
       } else {
