@@ -69,13 +69,6 @@
 </template>
 
 <script>
-// handle strings/filenames with spaces and parens
-function fixedEncodeURIComponent(str) {
-  return encodeURIComponent(str).replace(/[!'()*]/g, function (c) {
-    return '%' + c.charCodeAt(0).toString(16)
-  })
-}
-
 export default {
   name: 'SampleCard',
   props: {
@@ -145,9 +138,11 @@ export default {
     },
     hero() {
       if (this.type === 'sample') {
-        return `url(/images/samples/${fixedEncodeURIComponent(this.heroImage)})`
+        return `url(/images/samples/${this.fixedEncodeURIComponent(
+          this.heroImage
+        )})`
       } else if (this.type === 'project') {
-        return `url(/images/projects/${fixedEncodeURIComponent(
+        return `url(/images/projects/${this.fixedEncodeURIComponent(
           this.heroImage
         )})`
       } else {
@@ -158,7 +153,7 @@ export default {
       if (this.type === 'sample') {
         return null
       } else if (this.type === 'project') {
-        return `url(/images/background/${fixedEncodeURIComponent(
+        return `url(/images/background/${this.fixedEncodeURIComponent(
           this.backgroundImage
         )})`
       } else {
@@ -173,6 +168,13 @@ export default {
   methods: {
     flipCard() {
       this.flipped = !this.flipped
+    },
+
+    fixedEncodeURIComponent(str) {
+      // handle strings/filenames with spaces and parens
+      return encodeURIComponent(str).replace(/[!'()*]/g, function (c) {
+        return '%' + c.charCodeAt(0).toString(16)
+      })
     },
   },
 }
