@@ -214,5 +214,315 @@
     "heroImages": ["IMG_6212.JPG"],
     "description": "To present knit swatches as technical material, quantitative information was included on each page: concrete measurements, as well as quantified scores and diagrams for material qualities and prospective uses.",
     "author": "Elise Co, Mina Lee, Meredith Xu, Ray Cao"
+  },
+  {
+    "id": 951,
+    "title": "I-Cord [Level 1]",
+    "tags": "knit, acrylic",
+    "heroImages": ["icord_level1_01_Fractalknit-02.jpg"],
+    "description": "Level-1 I-Cord: I-cord (tubular knit), knit from acrylic",
+    "author": "Elise Co, An Pan",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 952,
+    "title": "Level 2 I-cord",
+    "tags": "knit, wool",
+    "heroImages": ["icord_level2_01_Fractalknit-17.jpg"],
+    "description": "Level-2 (knit from knit) I-cord. I-cord (tubular knit), knit from wool, then knit into I-Cord",
+    "author": "Elise Co, An Pan",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 953,
+    "title": "Level 3 I-Cord Chain",
+    "tags": "knit, wool",
+    "heroImages": ["icord_level3_green_03_Fractalknit-25.jpg"],
+    "description": "Level-3 (chain from knit from knit) I-cord. I-Cord (tubular knit) knit from wool, then knit into I-Cord, then chained.",
+    "author": "Elise Co, An Pan",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 954,
+    "title": "Level 3 I-Cord",
+    "tags": "knit, wool",
+    "heroImages": ["icord_level3_orange02_Fractalknit-32.jpg"],
+    "description": "Level-3 (knit from knit from knit) I-cord. I-Cord (tubular knit) knit from wool, then knit into I-Cord, then knit again into I-Cord.",
+    "author": "Elise Co, An Pan",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 955,
+    "title": "AI Generated A",
+    "tags": "AI, knit",
+    "heroImages": ["generated_A_02_AIknits-065 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in 2-color fair isle on Brother punchcard knitting machine in wool. This pattern was human-selected for its ambiguously figural/geometric shapes.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 956,
+    "title": "AI Generated B",
+    "tags": "AI, knit",
+    "heroImages": ["generated_B_01_AIknits-056.jpg"],
+    "description": "AI-generated knit pattern, knit in 2-color fair isle on Brother punchcard knitting machine in wool. This pattern was human-selected for its ambiguously figural/geometric shapes.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 957,
+    "title": "AI Generated C",
+    "tags": "AI, knit",
+    "heroImages": ["generated_C_01_AIknits-053 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in 2-color fair isle on Brother punchcard knitting machine in wool. This pattern was human-selected for its combination of blocked and dithered (noisy) forms.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 958,
+    "title": "AI Generated D",
+    "tags": "AI, knit",
+    "heroImages": ["generated_D_01_AIknits-045 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in 2-color fair isle on Brother punchcard knitting machine in wool. This pattern was human-selected for its figural shapes, similar to what a human might design.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 959,
+    "title": "AI Generated E",
+    "tags": "AI, knit",
+    "heroImages": ["generated_E_02_AIknits-037 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in 2-color fair isle on Brother punchcard knitting machine in wool. This pattern was human-selected for its balance of foreground/background and nonobvious grid.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 960,
+    "title": "AI Generated F",
+    "tags": "AI, knit",
+    "heroImages": ["generated_F_02_AIknits-023 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in 2-color fair isle on Brother punchcard knitting machine in wool. This pattern was human-selected for its \"noisiness\" (a visual characteristic not common to human-created knitting patterns)",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 961,
+    "title": "AI Generated G Fairisle",
+    "tags": "AI, knit",
+    "heroImages": ["generated_G_02_AIknits-029 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in 2-color fair isle on Brother punchcard knitting machine in wool. This pattern was human-selected for its interlocking geometric shapes, similar to what a human might design.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 962,
+    "title": "AI Generated H Fairisle",
+    "tags": "AI, knit",
+    "heroImages": ["generated_H_02_AIknits-007 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in 2-color fair isle on Brother punchcard knitting machine in wool. This pattern was human-selected for its interlocking geometric shapes, similar to what a human might design.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 963,
+    "title": "Human Generated Houndstooth",
+    "tags": "AI, knit",
+    "heroImages": ["passap_houndstooth_01_AIknits-070 (1).jpg"],
+    "description": "Two-color knitting pattern from Passap electronic knitting machine pattern bank, knit in 2-color fair isle on Brother punchcard knitting machine in wool.. This pattern was used in the training dataset for a pattern-generating AI model.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 964,
+    "title": "Human Designed Leopard",
+    "tags": "AI, knit",
+    "heroImages": ["passap_leopard_02_AIknits-089 (1).jpg"],
+    "description": "Two-color knitting pattern from Passap electronic knitting machine pattern bank, knit in 2-color fair isle on Brother punchcard knitting machine in wool.. This pattern was used in the training dataset for a pattern-generating AI model.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 965,
+    "title": "Human Designed Roses",
+    "tags": "AI, knit",
+    "heroImages": ["passap_roses_02_AIknits-095 (1).jpg"],
+    "description": "Two-color knitting pattern from Passap electronic knitting machine pattern bank, knit in 2-color fair isle on Brother punchcard knitting machine in wool.. This pattern was used in the training dataset for a pattern-generating AI model.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 966,
+    "title": "Human Designed Geo ",
+    "tags": "AI, knit",
+    "heroImages": ["passap_triangles_02_AIknits-102 (1).jpg"],
+    "description": "Two-color knitting pattern from Passap electronic knitting machine pattern bank, knit in 2-color fair isle on Brother punchcard knitting machine in wool.. This pattern was used in the training dataset for a pattern-generating AI model.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 967,
+    "title": "Human Designed Trains Fairisle",
+    "tags": "AI, knit",
+    "heroImages": ["passap_trains_02_AIknits-078 (1).jpg"],
+    "description": "Two-color knitting pattern from Passap electronic knitting machine pattern bank, knit in 2-color fair isle on Brother punchcard knitting machine in wool.. This pattern was used in the training dataset for a pattern-generating AI model.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 968,
+    "title": "AI Generated Q (inverse)",
+    "tags": "AI, knit",
+    "heroImages": ["aqua_lilac_AIknits-163 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in blue and lilac acrylic fairisle. This pattern was human-selected for its combination of noise and figure.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 969,
+    "title": "AI Generated V ",
+    "tags": "AI, knit",
+    "heroImages": ["jacquard_redblue_blobs_AIknits-207 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in aqua and blue acrylic double jacquard. This pattern was human-selected for its contiguous areas of color and blob-like quality.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 970,
+    "title": "AI Generated U",
+    "tags": "AI, knit",
+    "heroImages": ["noise_redblue_AIknits-214 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in aqua and blue acrylic double jacquard. This pattern was human-selected for its noisiness.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 971,
+    "title": "AI Generated T",
+    "tags": "AI, knit",
+    "heroImages": ["yellowblack_noise_AIknits-220 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in black and yellow wool fairisle. This pattern was human-selected for its noisiness.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 972,
+    "title": "AI Generated S",
+    "tags": "AI, knit",
+    "heroImages": ["aquablue_shapes_AIknits-126 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in aqua and blue acrylic double jacquard. This pattern was human-selected for its balance of foreground/backround and symmetry.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 973,
+    "title": "AI Generated R",
+    "tags": "AI, knit",
+    "heroImages": ["greyblack_AIknits-144 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in black and grey wool fairisle. This pattern was human-selected for its ambiguously figural/geometric quality.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 974,
+    "title": "AI Generated Q",
+    "tags": "AI, knit",
+    "heroImages": ["aqualilac_AIknits-153 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in blue and lilac acrylic fairisle. This pattern was human-selected for its combination of noise and figure.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 975,
+    "title": "AI Generated P",
+    "tags": "AI, knit",
+    "heroImages": ["greenwhite_noise_AIknits-200 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in cream wool and green acrylic fairisle. This pattern was human-selected for its combination of noise and figure.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 976,
+    "title": "AI Generated O",
+    "tags": "AI, knit",
+    "heroImages": ["intarsia_lilacnavy_AIknits-180 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in blue and lilac wool fairisle. This pattern was human-selected for its combination of noise and figure.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 977,
+    "title": "AI Generated N",
+    "tags": "AI, knit",
+    "heroImages": ["jacquard_aquaorange_AIknits-188 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in orange and aqua wool double jacquard. This pattern was human-selected for its combination of noise and figure.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 978,
+    "title": "AI Generated M",
+    "tags": "AI, knit",
+    "heroImages": ["pinkgreen_AIknits-170 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in green and pink wool fairisle. This pattern was human-selected for short spans of color and interlocking shapes.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 979,
+    "title": "AI Generated L",
+    "tags": "AI, knit",
+    "heroImages": ["lilacblue_01_AIknits-134 (1).jpg"],
+    "description": "AI-generated knit pattern, knit in lilac and blue wool fairisle. This pattern was human-selected for its noise/randomness.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 980,
+    "title": "AI Generated K",
+    "tags": "AI, knit",
+    "heroImages": ["greenbrown_fromvest_AIknits-115.jpg"],
+    "description": "AI-generated knit pattern, knit in double jacquard green and brown wool. This pattern was human-selected for its noise/randomness.",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 981,
+    "title": "AI Generated Noise Vest",
+    "tags": "garment, knit",
+    "heroImages": ["vest01_greenbrown_AIknits-116.jpg"],
+    "description": "Knit vest featuring AI-generated noise pattern. Knit double-jacquard on Passap double bed machine in brown wool and green acrylic ",
+    "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
   }
 ]
