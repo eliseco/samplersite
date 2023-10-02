@@ -14,12 +14,12 @@
   --text-dark: black;
   --text-light: white;
 
-  --grid-bg: #c4c4c4;
+  --grid-bg: #c4c4ba;
   --grid-lines: rgba(245, 245, 245, 0.2);
 
   --active-green: #05ff00;
 
-  --padding: 30px;
+  --padding: 28px;
   --topbar-height: 60px;
   --card-width: 270px;
   --card-height: 330px;
