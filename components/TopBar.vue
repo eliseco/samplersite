@@ -37,7 +37,6 @@ export default {
   width: 100%;
   height: var(--topbar-height);
   display: flex;
-  align-items: center;
   justify-content: center;
   border-bottom: 1px var(--border-light) solid;
   background: var(--background-gradient);
@@ -48,13 +47,13 @@ export default {
   max-width: var(--page-max-width);
   padding: 0 2em;
   display: flex;
-  align-items: center;
 }
 
 .left {
   font-family: var(--righteous);
   font-size: 36px;
   justify-self: flex-start;
+  align-self: center;
 }
 .right {
   font-family: var(--roboto);
@@ -62,6 +61,8 @@ export default {
   margin-left: auto;
   display: flex;
   gap: 2em;
+  align-self: flex-end;
+  padding-bottom: 15px;
 }
 
 .active {
