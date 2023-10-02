@@ -45,7 +45,7 @@ export default {
 .content {
   width: 100%;
   max-width: var(--page-max-width);
-  padding: 0 2em;
+  padding: 0 3em 0 2rem;
   display: flex;
 }
 
