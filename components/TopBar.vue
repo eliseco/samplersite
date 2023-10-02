@@ -8,9 +8,9 @@
         <NuxtLink to="/materialCatalog" :class="{ active: activeCatalog }">
           Material Catalog
         </NuxtLink>
-        <NuxtLink to="/about" :class="{ active: activeAbout }">
+        <!-- <NuxtLink to="/about" :class="{ active: activeAbout }">
           About
-        </NuxtLink>
+        </NuxtLink> -->
       </div>
     </div>
   </div>
