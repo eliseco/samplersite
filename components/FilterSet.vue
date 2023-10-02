@@ -15,6 +15,7 @@
         :checked="value.includes(option)"
         :value="option"
         :label="option"
+        :disabled="!!activeOptions.length && !activeOptions.includes(option)"
         @toggleCheck="handleCheck(option, $event)"
       />
     </div>
@@ -38,6 +39,11 @@ export default {
     value: {
       type: Array,
       required: true,
+    },
+    activeOptions: {
+      type: Array,
+      required: false,
+      default: () => [],
     },
   },
   data() {

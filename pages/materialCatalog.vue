@@ -5,7 +5,17 @@
         <span v-if="filters.tags.length"> {{ filteredCards.length }} / </span>
         {{ totalCardCount }} SAMPLES
       </div>
-      <FilterSet v-model="filters.tags" title="Tags" :options="allTags" />
+      <FilterSet
+        v-model="filters.types"
+        title="Card Type"
+        :options="cardTypes"
+      />
+      <FilterSet
+        v-model="filters.tags"
+        title="Tags"
+        :options="allTags"
+        :active-options="filteredTags"
+      />
     </div>
     <div class="sample-grid">
       <SampleCard
@@ -33,6 +43,7 @@ export default {
       // lets move these to the sample store once that gets updated
       filters: {
         tags: [],
+        types: [],
       },
     }
   },
@@ -44,17 +55,34 @@ export default {
       return this.allCards.length
     },
     allTags() {
-      return [...new Set(this.allCards.map((s) => s.tags.split(',')).flat(1))]
+      return [
+        ...new Set(this.allCards.map((s) => s.tags.split(',')).flat(1)),
+      ].filter((t) => t)
+    },
+    filteredTags() {
+      return [
+        ...new Set(this.filteredCards.map((s) => s.tags.split(',')).flat(1)),
+      ].filter((t) => t)
+    },
+    cardTypes() {
+      return [...new Set(this.allCards.map((s) => s.type))]
     },
     filteredCards() {
-      if (!this.filters.tags.length) return this.allCards
+      if (!this.filters.tags.length && !this.filters.types.length)
+        return this.allCards
       const cards = []
-      this.filters.tags.forEach((tag) => {
-        this.allCards.forEach((card) => {
-          if (card.tags.split(',').includes(tag)) {
+      this.allCards.forEach((card) => {
+        if (
+          this.filters.types.includes(card.type) ||
+          !this.filters.types.length
+        ) {
+          if (
+            card.tags.split(',').some((t) => this.filters.tags.includes(t)) ||
+            !this.filters.tags.length
+          ) {
             cards.push(card)
           }
-        })
+        }
       })
       return [...new Set(cards)]
     },
@@ -77,12 +105,14 @@ export default {
   border-right: 1px var(--border-light) solid;
   font-family: var(--roboto);
 }
+
 .sample-count {
   font-size: 0.875rem;
   font-weight: 400;
   padding-bottom: var(--padding);
   border-bottom: 1px var(--border-light) solid;
 }
+
 .sample-grid {
   flex-grow: 1;
   padding: var(--padding);

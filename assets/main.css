@@ -20,7 +20,7 @@
   --active-green: #05ff00;
 
   --padding: 30px;
-  --topbar-height: 90px;
+  --topbar-height: 60px;
   --card-width: 270px;
   --card-height: 330px;
 
@@ -44,7 +44,7 @@ body {
   color: var(--text);
   font-family: var(--font-family);
   background-position: -1px -1px;
-  background-size: 30px 30px;
+  background-size: 15px 15px;
   background-color: var(--grid-bg);
   background-image: var(--line-grid);
   background-repeat: repeat;

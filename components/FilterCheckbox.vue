@@ -4,6 +4,7 @@
       :id="value"
       type="checkbox"
       :checked="checked"
+      :disabled="disabled"
       @input="(event) => $emit('toggleCheck', event.target.checked)"
     />
     <span class="indicator" />
@@ -24,6 +25,10 @@ export default {
       required: true,
     },
     checked: {
+      type: Boolean,
+      default: false,
+    },
+    disabled: {
       type: Boolean,
       default: false,
     },
@@ -60,5 +65,10 @@ input {
 
 input:checked ~ .indicator {
   background-color: var(--active-green);
+}
+
+input:disabled ~ .label,
+input:disabled ~ .indicator {
+  opacity: 50%;
 }
 </style>
