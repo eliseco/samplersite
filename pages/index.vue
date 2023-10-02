@@ -1,10 +1,19 @@
 <template>
   <main class="homepage-wrapper">
-    <div class="welcome-header">
-      <span class="header"> welcome </span>
-      <span class="shuffle" @click="getRandomCards">shuffle cards</span>
-    </div>
-    <div class="card-shuffle">
+    <div class="card-grid">
+      <SampleCard />
+      <div class="wide-card">
+        <h1>SAMPLER</h1>
+        <h4>
+          is an ongoing research initiative led by Elise Co, investigating
+          questions of materiality through collaborative making.
+        </h4>
+        <h4>
+          Inspired by needlework samplers, textile sample books, and “sampling”
+          as a creative strategy, this website is a system for documenting,
+          reflecting on, and re-mixing SAMPLER.
+        </h4>
+      </div>
       <SampleCard
         v-for="(card, i) in cards"
         :key="i"
@@ -17,6 +26,78 @@
         :authors="card.author"
         :background-image="card.type === 'project' ? card.background : null"
       />
+      <div class="wide-card">
+        <h2>SAMPLES</h2>
+        <p>
+          From the Oxford English Dictionary, a sample is “a small part or
+          quantity intended to show what the whole is like.” Like a prototype
+          (another crucial part of Elise Co practice), a sample is never the
+          final thing. In fact, it retains the potential to become or represent
+          one of many possible “final things.” A small square of black leather
+          may be the sample for a combat boot, or a luxury car interior, or an
+          evening purse. It is all of them.
+        </p>
+        <p>
+          It is a small piece of design+making that both demonstrates (displays)
+          and provides an opportunity to try (learn) an idea or technique.
+        </p>
+        <p>
+          On this website, “sample cards” represent discrete pieces of making.
+          Click the corner of the card to see more information, including the
+          projects and sets the sample is a part of.
+        </p>
+      </div>
+      <SampleCard />
+      <SampleCard />
+      <div class="wide-card">
+        <h2>PROJECTS</h2>
+        <p>
+          SAMPLER includes multiple projects, each with its own
+          question/brief/hypothesis and set of designed and produced outcomes,
+          among them: mechanical devices, textiles, software and interactive
+          digital prototypes.
+        </p>
+        <p>
+          Each project begins with a question. Even when there is a specific
+          idea about what to make, the purpose of the project is never just to
+          make it; it’s to ask, “What happens if we try to make X?”
+        </p>
+        <p>
+          On this website, each project has its own page, which includes
+          research questions and the samples (represented by the card format)
+          that were produced to interrogate those questions. Projects also have
+          “card” representations; clicking the green arrow next to the project
+          title will open the full project page.
+        </p>
+      </div>
+      <SampleCard />
+      <div class="wide-card">
+        <h2>SETS</h2>
+        <p>
+          While each project is discrete, many are interconnected, riffing on
+          similar themes or picking up the literal or conceptual threads of
+          another. These relationships are visible through shared samples across
+          the projects, as well as through groupings called Sets. Sets may
+          consist of any combination of samples, projects, or other sets.
+        </p>
+        <p>
+          On this website, each set has its own page, which includes samples and
+          projects that are conceptually related to each other. Sets also have
+          “card” representations; clicking the green arrow next to the set title
+          will open the full set page.
+        </p>
+      </div>
+      <SampleCard />
+      <SampleCard />
+      <div class="wide-card">
+        <h2>CATALOG</h2>
+        <p>The Catalog is a space to browse all samples, projects, and sets.</p>
+        <p>
+          In the Catalog, filters on the left allow for custom curation of cards
+          based on tags. Checking the boxes next to the filters will show only
+          cards associated with those tags.
+        </p>
+      </div>
     </div>
   </main>
 </template>
@@ -29,11 +110,9 @@ export default {
       cards: [],
     }
   },
-
   mounted() {
     this.getRandomCards()
   },
-
   methods: {
     getRandomCards() {
       this.cards = this.$store.getters['samples/getRandomCards'](3)
@@ -45,36 +124,58 @@ export default {
 <style scoped>
 .homepage-wrapper {
   font-family: var(--roboto);
+  gap: 2rem;
+  background: url('static/images/background/sampler-wavy.png');
+  background-repeat: no-repeat;
+  background-position: top var(--padding) left var(--padding);
+  background-size: 40%;
+  overflow-y: auto;
+}
+
+.wide-card {
+  width: calc(2 * var(--card-width) + var(--padding));
+  height: var(--card-height);
+  background: linear-gradient(
+    315deg,
+    transparent 30px,
+    var(--active-green) 30px
+  );
   padding: var(--padding);
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
 }
 
-.header {
-  font-size: 36px;
+h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 64px;
+  font-weight: 300;
+  font-family: var(--righteous);
 }
 
-.welcome-header {
+h2 {
+  margin: 0;
+  font-size: 32px;
+  font-family: var(--rajdhani);
+}
+
+h4 {
+  font-family: var(--roboto);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  font-family: var(--roboto);
+  font-size: 14px;
+  text-align: left;
+}
+
+.card-grid {
+  padding: var(--padding);
+  margin-left: var(--card-width);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-.shuffle {
-  width: fit-content;
-  display: flex;
-  padding: 4px 8px;
-  background: var(--active-green);
-  outline: 1px solid black;
-  cursor: pointer;
-}
-
-.card-shuffle {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: var(--padding);
+  height: min-content;
 }
 </style>

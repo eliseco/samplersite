@@ -77,7 +77,7 @@ export default {
     type: {
       type: String,
       required: false,
-      default: '',
+      default: 'sample',
     },
     title: {
       type: String,
@@ -138,7 +138,7 @@ export default {
         return `url(/images/samples/${this.fixedEncodeURIComponent(
           this.heroImage
         )})`
-      } else if (this.type === 'project') {
+      } else if (this.type === 'project' || this.type === 'set') {
         return `url(/images/projects/${this.fixedEncodeURIComponent(
           this.heroImage
         )})`
@@ -182,7 +182,6 @@ export default {
   background-color: transparent;
   width: var(--card-width);
   height: var(--card-height);
-  /* perspective: 1000px; 3d effect */
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
