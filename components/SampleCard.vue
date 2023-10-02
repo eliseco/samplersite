@@ -214,7 +214,7 @@ export default {
 }
 
 .front-side {
-  background: linear-gradient(315deg, transparent 22px, #f1f1f1 22px);
+  background: linear-gradient(315deg, transparent 30px, #f1f1f1 30px);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -285,7 +285,7 @@ a {
 }
 
 .back-side {
-  background: linear-gradient(45deg, transparent 22px, black 22px);
+  background: linear-gradient(45deg, transparent 30px, black 30px);
   color: white;
   transform: rotateY(180deg);
   font-family: var(--roboto);
