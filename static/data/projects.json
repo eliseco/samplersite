@@ -19,12 +19,70 @@
       "IMG_4025.jpg",
       "IMG_6067.JPG"
     ],
-    "background": "bg1.png",
+    "background": "cardbg1.png",
+    "pageBackground": "pagebg1.png",
     "researchQuestions": [
       "Can we replicate a \"high-tech\" shoe using \"low-tech\" manual knitting machines?",
       "What are the knit structures that make up Nike Flyknit technology?",
       "What is a prototype?"
     ],
+    "date": "07/2019",
+    "external_link": ""
+  },
+  {
+    "id": 2,
+    "type": "project",
+    "singleIds": [
+      118, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968,
+      969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981
+    ],
+    "setIds": [],
+    "title": "AI Knits",
+    "description": "We use traditional 2-color knitting patterns (repeating motifs) to generate new patterns. Custom software to preview and curate/select the \"good\" patterns",
+    "author": "Elise Co, Ying Huang",
+    "tags": "AI, software, knit",
+    "heroImages": ["DSC_7019.JPG", "IMG_5040.jpg", "DSC_7018.JPG"],
+    "processImages": [
+      "DSC_6967.JPG",
+      "vest02_AIknits-119.jpg",
+      "Process-52.jpg",
+      "Process-50.jpg",
+      "Process-51.jpg",
+      "Process-48.jpg"
+    ],
+    "background": "cardbg2.png",
+    "pageBackground": "pagebg2.png",
+    "researchQuestions": [
+      "What if we generate knitting patterns using AI?",
+      "What makes a \"good\" knitting pattern?"
+    ],
+    "date": "07/2019",
+    "external_link": ""
+  },
+  {
+    "id": 101,
+    "type": "set",
+    "singleIds": [],
+    "setIds": [0, 2],
+    "title": "Sampler 1",
+    "description": "Sampler 1, initially just SAMPLER, was an MDP Summer Research project for 2019. SAMPLER centered around mechanical knitting machines, but explored varying formal and conceptual questions.",
+    "author": "Elise Co, Martin Bernard, Rei Cao, Ying Huang, Keda Jiang, Mina Lee, Yuwen Lin, An Pan, Fei Wang, Meredith Xu",
+    "tags": "summer research, knit",
+    "heroImages": [
+      "IMG_5053.JPG",
+      "IMG_5037.JPG",
+      "IMG_5061.JPG",
+      "IMG_5051.JPG"
+    ],
+    "processImages": [
+      "IMG_3849.JPG",
+      "IMG_3855.JPG",
+      "IMG_4218.JPG",
+      "IMG_4427.JPG"
+    ],
+    "background": "",
+    "pageBackground": "",
+    "researchQuestions": [],
     "date": "07/2019",
     "external_link": ""
   }
