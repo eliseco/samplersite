@@ -1,5 +1,5 @@
 <template>
-  <div class="card-wrapper">
+  <div class="card-wrapper" @click="flipCard">
     <div class="card-inner" :class="{ flipped }">
       <div
         class="front-side"
@@ -29,7 +29,6 @@
             <img src="~/static/ui-elements/link-arrow.svg" alt="" />
           </NuxtLink>
         </span>
-        <div class="flip-button-front" @click="flipCard"></div>
       </div>
       <div class="back-side">
         <div class="description-wrapper">
@@ -61,8 +60,6 @@
             </span>
           </div>
         </div>
-
-        <div class="flip-button-back" @click="flipCard"></div>
       </div>
     </div>
   </div>
@@ -189,6 +186,7 @@ export default {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .card-inner {
@@ -216,7 +214,7 @@ export default {
 }
 
 .front-side {
-  background: #f1f1f1;
+  background: linear-gradient(315deg, transparent 22px, #f1f1f1 22px);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -287,7 +285,7 @@ a {
 }
 
 .back-side {
-  background-color: black;
+  background: linear-gradient(45deg, transparent 22px, black 22px);
   color: white;
   transform: rotateY(180deg);
   font-family: var(--roboto);
@@ -330,35 +328,15 @@ a {
   color: black;
 }
 
+.parent:hover {
+  text-decoration: underline;
+}
+
 .authors {
   padding: 0.25rem 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.flip-button-front {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 30px 30px;
-  border-color: transparent transparent var(--grid-bg) transparent;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  cursor: pointer;
-}
-
-.flip-button-back {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 30px 30px 0;
-  border-color: transparent transparent var(--grid-bg) transparent;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  cursor: pointer;
+  gap: 0 0.75rem;
 }
 </style>
