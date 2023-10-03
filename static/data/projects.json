@@ -60,6 +60,32 @@
     "external_link": ""
   },
   {
+    "id": 3,
+    "type": "project",
+    "singleIds": [125, 126, 127, 128],
+    "setIds": [],
+    "title": "Dioramas",
+    "description": "These self-contained interactives provide virtual spaces in which to play with our digital materials. The only interaction is to click to switch the material applied to a particular surface. Browsing and curation become acts of creative production.\n\nEach diorama explores the formal parameters of digital \"space:\" \nscale(lessness)\ntrue 2D (zero-thickness plane)\nsimulation of physical world vs abstraction",
+    "author": "Elise Co, Nanyi Jiang, Miaoqiong Huang, Qi Tan, Christie Wu",
+    "tags": "virtual, prototype, interactive",
+    "heroImages": ["Diorama_5.png"],
+    "processImages": [
+      "DSC_6977.JPG",
+      "DSC_7036.JPG",
+      "IMG_4025.jpg",
+      "IMG_6067.JPG"
+    ],
+    "background": "cardbg1.png",
+    "pageBackground": "pagebg1.png",
+    "researchQuestions": [
+      "What is our digital material applied to?",
+      "What's the relationship between the material and the form/object it forms?",
+      "What are formal parameters of digital \"space\"?"
+    ],
+    "date": "07/2019",
+    "external_link": "https://poly.cam/capture/C98D65B3-4495-4EF4-B909-32F8FA6C033A"
+  },
+  {
     "id": 101,
     "type": "set",
     "singleIds": [],
