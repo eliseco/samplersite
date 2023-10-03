@@ -30,6 +30,18 @@ export const getters = {
     return indices.map((i) => getters.getAllCards[i])
   },
 
+  getRandomProject: (state) => () => {
+    const p = [...state.projects].filter((p) => p.type === 'project')
+    const randomIndex = Math.floor(Math.random() * p.length)
+    return p[randomIndex]
+  },
+
+  getRandomSet: (state) => () => {
+    const p = [...state.projects].filter((p) => p.type === 'set')
+    const randomIndex = Math.floor(Math.random() * p.length)
+    return p[randomIndex]
+  },
+
   getParentsBySampleId: (state, getters) => (singleId) => {
     const parents = []
     state.projects.forEach((set) => {

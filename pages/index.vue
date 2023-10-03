@@ -14,6 +14,7 @@
           reflecting on, and re-mixing SAMPLER.
         </h4>
       </div>
+      <SampleCard :random-background="2" />
       <SampleCard
         v-for="(card, i) in cards"
         :key="i"
@@ -47,8 +48,19 @@
           projects and sets the sample is a part of.
         </p>
       </div>
-      <SampleCard :random-background="2" />
-      <SampleCard :random-background="3" />
+      <SampleCard
+        v-if="project"
+        :sid="project.id"
+        :type="project.type"
+        :title="project.title"
+        :hero-image="project.heroImages[0]"
+        :tags="project.tags"
+        :description="project.description"
+        :authors="project.author"
+        :background-image="
+          project.type === 'project' ? project.background : null
+        "
+      />
       <div class="wide-card">
         <h2>PROJECTS</h2>
         <p>
@@ -60,7 +72,7 @@
         <p>
           Each project begins with a question. Even when there is a specific
           idea about what to make, the purpose of the project is never just to
-          make it; it’s to ask, “What happens if we try to make X?”
+          make it; it's to ask, “What happens if we try to make X?”
         </p>
         <p>
           On this website, each project has its own page, which includes
@@ -87,10 +99,22 @@
           will open the full set page.
         </p>
       </div>
-      <SampleCard />
+      <SampleCard
+        v-if="set"
+        :sid="set.id"
+        :type="set.type"
+        :title="set.title"
+        :hero-image="set.heroImages[0]"
+        :tags="set.tags"
+        :description="set.description"
+        :authors="set.author"
+        :background-image="set.type === 'project' ? set.background : null"
+      />
       <SampleCard :random-background="5" />
       <div class="wide-card">
-        <h2>CATALOG</h2>
+        <NuxtLink to="/materialCatalog">
+          <h2>CATALOG</h2>
+        </NuxtLink>
         <p>The Catalog is a space to browse all samples, projects, and sets.</p>
         <p>
           In the Catalog, filters on the left allow for custom curation of cards
@@ -98,6 +122,7 @@
           cards associated with those tags.
         </p>
       </div>
+      <SampleCard :random-background="3" />
     </div>
   </main>
 </template>
@@ -108,14 +133,24 @@ export default {
   data: () => {
     return {
       cards: [],
+      project: null,
+      set: null,
     }
   },
   mounted() {
     this.getRandomCards()
+    this.getProject()
+    this.getSet()
   },
   methods: {
     getRandomCards() {
-      this.cards = this.$store.getters['samples/getRandomCards'](3)
+      this.cards = this.$store.getters['samples/getRandomCards'](2)
+    },
+    getProject() {
+      this.project = this.$store.getters['samples/getRandomProject']()
+    },
+    getSet() {
+      this.set = this.$store.getters['samples/getRandomSet']()
     },
   },
 }
@@ -177,5 +212,13 @@ p {
   flex-wrap: wrap;
   gap: var(--padding);
   height: min-content;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  color: white;
 }
 </style>

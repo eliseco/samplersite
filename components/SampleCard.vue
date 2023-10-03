@@ -23,11 +23,14 @@
           {{ paddedId }}
         </span>
         <div class="hero-image" :style="{ backgroundImage: hero }"></div>
-        <span class="title">
-          {{ title }}
+        <span v-if="type !== 'sample'" class="title">
           <NuxtLink v-if="type !== 'sample'" :to="'/sets/' + sid">
+            {{ title }}
             <img src="~/static/ui-elements/link-arrow.svg" alt="" />
           </NuxtLink>
+        </span>
+        <span v-else class="title">
+          {{ title }}
         </span>
       </div>
       <div class="back-side" :style="{ backgroundImage: backgroundBack }">
@@ -286,16 +289,21 @@ export default {
 
 .title {
   display: flex;
-  gap: 6px;
   font-family: var(--rajdhani);
   font-size: 1.25rem;
   font-weight: 600;
   line-height-step: 50%;
+  white-space: nowrap;
 }
 
 a {
   display: flex;
   align-content: center;
+  gap: 6px;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .back-side {
