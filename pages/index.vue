@@ -1,7 +1,7 @@
 <template>
   <main class="homepage-wrapper">
     <div class="card-grid">
-      <SampleCard />
+      <SampleCard :random-background="1" />
       <div class="wide-card">
         <h1>SAMPLER</h1>
         <h4>
@@ -47,8 +47,8 @@
           projects and sets the sample is a part of.
         </p>
       </div>
-      <SampleCard />
-      <SampleCard />
+      <SampleCard :random-background="2" />
+      <SampleCard :random-background="3" />
       <div class="wide-card">
         <h2>PROJECTS</h2>
         <p>
@@ -70,7 +70,7 @@
           title will open the full project page.
         </p>
       </div>
-      <SampleCard />
+      <SampleCard :random-background="4" />
       <div class="wide-card">
         <h2>SETS</h2>
         <p>
@@ -88,7 +88,7 @@
         </p>
       </div>
       <SampleCard />
-      <SampleCard />
+      <SampleCard :random-background="5" />
       <div class="wide-card">
         <h2>CATALOG</h2>
         <p>The Catalog is a space to browse all samples, projects, and sets.</p>

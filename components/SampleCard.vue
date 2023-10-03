@@ -30,15 +30,15 @@
           </NuxtLink>
         </span>
       </div>
-      <div class="back-side">
-        <div class="description-wrapper">
+      <div class="back-side" :style="{ backgroundImage: backgroundBack }">
+        <div v-if="sid" class="description-wrapper">
           <div class="header">Description</div>
           <div class="description">
             {{ description }}
           </div>
         </div>
 
-        <div class="parents-wrapper">
+        <div v-if="sid" class="parents-wrapper">
           <div class="header">Part of</div>
           <div class="parents">
             <NuxtLink
@@ -52,7 +52,7 @@
           </div>
         </div>
 
-        <div class="authors-wrapper">
+        <div v-if="sid" class="authors-wrapper">
           <div class="header">Made by</div>
           <div class="authors">
             <span v-for="author in splitAuthors" :key="author" class="author">
@@ -72,7 +72,7 @@ export default {
     sid: {
       type: Number,
       required: false,
-      default: 0,
+      default: null,
     },
     type: {
       type: String,
@@ -114,6 +114,11 @@ export default {
       required: false,
       default: () => {},
     },
+    randomBackground: {
+      type: Number,
+      required: false,
+      default: null,
+    },
   },
   data() {
     return {
@@ -128,6 +133,7 @@ export default {
       return this.authors.length ? this.authors.split(',') : []
     },
     paddedId() {
+      if (!this.sid) return ''
       if (this.type === 'project') {
         return '#P' + String(this.sid).padStart(3, '0')
       }
@@ -147,12 +153,22 @@ export default {
       }
     },
     background() {
+      if (this.randomBackground) {
+        return `url(/images/background/randbg${this.randomBackground}-front.png), linear-gradient(315deg, transparent 30px, #f1f1f1 30px)`
+      }
       if (this.type === 'sample') {
         return null
       } else if (this.type === 'project') {
         return `url(/images/background/${this.fixedEncodeURIComponent(
           this.backgroundImage
         )})`
+      } else {
+        return null
+      }
+    },
+    backgroundBack() {
+      if (this.randomBackground) {
+        return `url(/images/background/randbg${this.randomBackground}-back.png), linear-gradient(45deg, transparent 30px, black 30px)`
       } else {
         return null
       }
@@ -260,7 +276,6 @@ export default {
 }
 
 .hero-image {
-  background: #c4c4c4;
   width: 250px;
   height: 190px;
   margin: 6px 0;
