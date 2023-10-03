@@ -62,19 +62,14 @@
   {
     "id": 3,
     "type": "project",
-    "singleIds": [125, 126, 127, 128],
+    "singleIds": [125, 126, 127, 128, 122, 123, 124],
     "setIds": [],
     "title": "Dioramas",
-    "description": "These self-contained interactives provide virtual spaces in which to play with our digital materials. The only interaction is to click to switch the material applied to a particular surface. Browsing and curation become acts of creative production.\n\nEach diorama explores the formal parameters of digital \"space:\" \nscale(lessness)\ntrue 2D (zero-thickness plane)\nsimulation of physical world vs abstraction",
+    "description": "These self-contained interactives provide virtual spaces in which to play with our digital materials. The only interaction is to click to switch the material applied to a particular surface. Browsing and curation become acts of creative production.\n\nEach diorama explores the formal parameters of digital \"space\": \nscale(lessness)\ntrue 2D (zero-thickness plane)\nsimulation of physical world vs abstraction",
     "author": "Elise Co, Nanyi Jiang, Miaoqiong Huang, Qi Tan, Christie Wu",
     "tags": "virtual, prototype, interactive",
     "heroImages": ["Diorama_5.png"],
-    "processImages": [
-      "DSC_6977.JPG",
-      "DSC_7036.JPG",
-      "IMG_4025.jpg",
-      "IMG_6067.JPG"
-    ],
+    "processImages": [],
     "background": "cardbg1.png",
     "pageBackground": "pagebg1.png",
     "researchQuestions": [
@@ -83,7 +78,33 @@
       "What are formal parameters of digital \"space\"?"
     ],
     "date": "07/2019",
-    "external_link": "https://poly.cam/capture/C98D65B3-4495-4EF4-B909-32F8FA6C033A"
+    "external_link": "https://eliseco.github.io/sampler2_dioramas/"
+  },
+  {
+    "id": 4,
+    "type": "project",
+    "singleIds": [121, 122, 123, 124],
+    "setIds": [],
+    "title": "The Material Loop",
+    "description": "We define material as: anything that can be shaped or formed into something else.\n\nThe line between  object (or content) and material is sometimes just a matter of quantity. In a world of digital copy-and-paste and  algorithmic generation, anything and everything is material.",
+    "author": "Elise Co, Martin Bernard, Mavis Cao, Isabelle Chaligne, Christie Wu",
+    "tags": "virtual, prototype, interactive",
+    "heroImages": [
+      "catalog_level1c.JPG",
+      "catalog_level3d.JPG",
+      "catalog_level1selfie.JPG",
+      "catalog_level2.JPG",
+      "catalog_level3b.JPG"
+    ],
+    "processImages": [],
+    "background": "cardbg2.png",
+    "pageBackground": "pagebg2.png",
+    "researchQuestions": [
+      "Can anything become a material? How?",
+      "What are the implications of producing material vs something \"finished\"?"
+    ],
+    "date": "07/2019",
+    "external_link": "https://eliseco.github.io/sampler2_webcatalog/"
   },
   {
     "id": 101,
