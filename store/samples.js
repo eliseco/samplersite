@@ -18,7 +18,7 @@ export const getters = {
   },
 
   getProjectById: (state) => (projectId) => {
-    return state.projects.find((p) => String(p.id) === projectId)
+    return state.projects.find((p) => String(p.id) === String(projectId))
   },
 
   getRandomCards: (state, getters) => (n) => {
@@ -43,23 +43,17 @@ export const getters = {
   },
 
   getParentsBySampleId: (state, getters) => (singleId) => {
-    const parents = []
+    let parents = []
     state.projects.forEach((set) => {
       if (set.singleIds?.includes(singleId)) parents.push(set)
-      // parents = parents.concat(getters.getParentsBySetId(set.id))
+      parents = parents.concat(getters.getParentsBySetId(set.id))
     })
     return [...new Set(parents)]
   },
 
-  // ---------------------- all still old -----------------------------
-
-  getSetById: (state) => (setId) => {
-    return state.sets.find((s) => s.id === setId)
-  },
-
   getParentsBySetId: (state) => (setId) => {
     const parents = []
-    state.sets.forEach((set) => {
+    state.projects.forEach((set) => {
       if (set.setIds?.includes(setId)) parents.push(set)
     })
     return [...new Set(parents)]
