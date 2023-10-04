@@ -208,6 +208,7 @@ h3 {
 .description {
   font-family: var(--roboto);
   color: white;
+  white-space: pre-line;
 }
 
 .sample-carousel {

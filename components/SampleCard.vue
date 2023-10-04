@@ -351,6 +351,7 @@ a:hover {
   padding: 0.25rem 0;
   max-height: 5rem;
   overflow-y: auto;
+  white-space: pre-line;
 }
 
 .parents {
