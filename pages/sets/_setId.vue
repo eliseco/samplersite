@@ -42,7 +42,7 @@ this page will then access the set from our store using the passed in setID, and
         </div>
 
         <div class="description" :class="{ black: project.type === 'set' }">
-          {{ project.description }}
+          <span class="pre-line">{{ project.description }}</span>
         </div>
       </div>
       <ImageCarousel :images="project.heroImages" />
@@ -208,6 +208,9 @@ h3 {
 .description {
   font-family: var(--roboto);
   color: white;
+}
+
+.pre-line {
   white-space: pre-line;
 }
 
