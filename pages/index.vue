@@ -44,9 +44,11 @@
           and provides an opportunity to try (learn) an idea or technique.
         </p>
         <p>
-          On this website, “sample cards” represent discrete pieces of making.
-          Click the corner of the card to see more information, including the
-          projects and sets the sample is a part of.
+          <i>
+            On this website, “sample cards” represent discrete pieces of making.
+            Click the card to see more information, including the projects and
+            sets the sample is a part of.</i
+          >
         </p>
       </div>
       <SampleCard
@@ -77,11 +79,13 @@
           make it; it's to ask, “What happens if we try to make X?”
         </p>
         <p>
-          On this website, each project has its own page, which includes
-          research questions and the samples (represented by the card format)
-          that were produced to interrogate those questions. Projects also have
-          “card” representations; clicking the green arrow next to the project
-          title will open the full project page.
+          <i>
+            On this website, each project has its own page, which includes
+            research questions and the samples (represented by the card format)
+            that were produced to interrogate those questions. Projects also
+            have “card” representations; clicking the green arrow next to the
+            project title will open the full project page.</i
+          >
         </p>
       </div>
       <SampleCard :random-background="4" />
@@ -95,10 +99,12 @@
           consist of any combination of samples, projects, or other sets.
         </p>
         <p>
-          On this website, each set has its own page, which includes samples and
-          projects that are conceptually related to each other. Sets also have
-          “card” representations; clicking the green arrow next to the set title
-          will open the full set page.
+          <i>
+            On this website, each set has its own page, which includes samples
+            and projects that are conceptually related to each other. Sets also
+            have “card” representations; clicking the green arrow next to the
+            set title will open the full set page.</i
+          >
         </p>
       </div>
       <SampleCard
@@ -120,9 +126,11 @@
         </NuxtLink>
         <p>The Catalog is a space to browse all samples, projects, and sets.</p>
         <p>
-          In the Catalog, filters on the left allow for custom curation of cards
-          based on tags. Checking the boxes next to the filters will show only
-          cards associated with those tags.
+          <i>
+            In the Catalog, filters on the left allow for custom curation of
+            cards based on tags. Checking the boxes next to the filters will
+            show only cards associated with those tags.</i
+          >
         </p>
       </div>
       <SampleCard :random-background="3" />
