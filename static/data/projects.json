@@ -110,7 +110,7 @@
     "id": 101,
     "type": "set",
     "singleIds": [],
-    "setIds": [0, 2],
+    "setIds": [1, 2],
     "title": "SAMPLER 1",
     "description": "SAMPLER 1, initially just SAMPLER, was an MDP Summer Research project for 2019. SAMPLER centered around mechanical knitting machines, but explored a variety of formal and conceptual questions. The SAMPLER ethos of trying lots of different smaller things, and then synthesizing, was first tested in research group format here.",
     "author": "Elise Co, Martin Bernard, Rei Cao, Ying Huang, Keda Jiang, Mina Lee, Yuwen Lin, An Pan, Fei Wang, Meredith Xu",
