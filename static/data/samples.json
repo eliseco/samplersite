@@ -1,14 +1,5 @@
 [
   {
-    "id": 4,
-    "type": "sample",
-    "title": "Flyknit Upper, intarsia patterned",
-    "tags": "prototype, garment, knit",
-    "heroImages": ["F369EBA7-82E9-43B6-B438-7050B3ABA454.jpg"],
-    "description": "Flyknit upper with decorative intarsia, combining \"high-tech\" structure with traditional aesthetics.",
-    "author": "Elise Co, Martin Bernard, Keda Jiang"
-  },
-  {
     "id": 5,
     "type": "sample",
     "title": "Green Wool Mesh",
@@ -481,6 +472,207 @@
     "heroImages": ["vest01_greenbrown_AIknits-116.jpg"],
     "description": "Knit vest featuring AI-generated noise pattern. Knit double-jacquard on Passap double bed machine in brown wool and green acrylic ",
     "author": "Elise Co, Ying Huang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 982,
+    "title": "Purple/Yellow Flyknit Upper",
+    "tags": "knit, garment",
+    "heroImages": ["flyknitupper_purpleyellow_01_.jpg"],
+    "description": "Wool Flyknit upper utilizing short-row shaping, localized mesh in the toe box, and lace eyelets for integrating \"flywire\" support lines that provide lateral rigidity and lacing loops.",
+    "author": "Elise Co, Martin Bernard, Keda Jiang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 983,
+    "title": "Fairisle Nordic Upper",
+    "tags": "knit, garment",
+    "heroImages": ["flyknitupper_rainbowintarsia_01_Flyknit-11.jpg"],
+    "description": "Wool Flyknit upper utlizing short-row shaping and patterned with decorative intarsia, combining \"high-tech\" structure with traditional aesthetics.",
+    "author": "Elise Co, Martin Bernard, Keda Jiang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 984,
+    "title": "Flyknit Prototype",
+    "tags": "knit, garment",
+    "heroImages": ["flyknitshoe_01_Flyknit-36.jpg"],
+    "description": "Wool Flyknit upper utilizing short-row shaping, localized mesh in the toe box, and lace eyelets for integrating \"flywire\" support lines that provide lateral rigidity and lacing loops. Mounted to a reclaimed Nike insole and sole. ",
+    "author": "Elise Co, Martin Bernard, Keda Jiang",
+    "date": "07/2019",
+    "type": "sample",
+    "external_link": "https://poly.cam/capture/C98D65B3-4495-4EF4-B909-32F8FA6C033A"
+  },
+  {
+    "id": 985,
+    "title": "Fairisle Mod Upper",
+    "tags": "knit, garment",
+    "heroImages": ["flyknitupper_modintarsia_01_Flyknit-19.jpg"],
+    "description": "Wool Flyknit upper utlizing short-row shaping and patterned with decorative intarsia, combining \"high-tech\" structure with decorative patterning. Fairisle pattern is a 70s geometric.",
+    "author": "Elise Co, Martin Bernard, Keda Jiang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 986,
+    "title": "Green/Grey Upper",
+    "tags": "knit, garment",
+    "heroImages": ["flyknitupper_withtongue_01_Flyknit-05.jpg"],
+    "description": "Wool Flyknit upper utilizing short-row shaping and integrated tongue.",
+    "author": "Elise Co, Martin Bernard, Keda Jiang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 987,
+    "title": "Curl Force Measurement Rig",
+    "tags": "mechanism",
+    "heroImages": ["curlforce_rig1_Machine-64.jpg"],
+    "description": "Device designed to measure \"curl force\" of knit swatches. This was an attempt to take an observed characteristic (curling) and quantify it using simple mechanisms that could be created at home. The swatch is clamped at the top, and weights are added until the swatch hangs straight. ",
+    "author": "Elise Co, Rei Cao, Meredith Xu",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 988,
+    "title": "Jumbo Circular Knitting Machine",
+    "tags": "mechanism",
+    "heroImages": ["icordmachine_level2_Machine-16.jpg"],
+    "description": "Four-needle circular knitting machine for knitting I-cord, sized to take I-cord as its \"fiber\" and thus produce a Level-2 (knit out of knit) tube. The machine uses DIY latch hooks and an assembly of components sourced and customized from the shelves of a hardware store.",
+    "author": "Elise Co, Rei Cao, An Pan, Meredith Xu",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 989,
+    "title": "I-Cord Weight",
+    "tags": "mechanism",
+    "heroImages": ["icord_weight_Machine-81.jpg"],
+    "description": "Customized weighted clip used to provide tension while knitting I-Cord (tubular knit) via machine. The wrapped wool yarn secures additional weight, provides a softer tactile feel, and lends a personal touch to automation.",
+    "author": "Elise Co, An Pan",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 990,
+    "title": "Extra-Jumbo Circular Knitting Machine",
+    "tags": "mechanism",
+    "heroImages": ["icordmachine_level3.jpg"],
+    "description": "Four-needle circular knitting machine for knitting I-cord, sized to take Level-2 (knit out of knit) I-cord as its \"fiber\" and thus produce a Level-3 (knit out of knit of knit) tube. The machine is assembled from laser-cut panels and uses DIY latch hooks. ",
+    "author": "Elise Co, Rei Cao, An Pan, Meredith Xu",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 991,
+    "title": "Swatchbook p01",
+    "tags": "document",
+    "heroImages": ["swatchbook01_01_Process-39.jpg"],
+    "description": "Dimensional tuck stitch knitted in acrylic on double bed Passap. Swatchbook page with macro image, physical swatch, and listing of quantified subjective and objective material properties.",
+    "author": "Elise Co, Mina Lee, Fei Wang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 992,
+    "title": "Swatchbook Page: Analagous References",
+    "tags": "document",
+    "heroImages": ["swatchbook01_02_Process-36.jpg"],
+    "description": "Swatchbook companion page allows the knitter or viewer to add references to analagous materials, expanding beyond technical specifications. Companion to Swatchbook p01 (dimensional tuck stitch wool knitted on double bed Passap). ",
+    "author": "Elise Co, Mina Lee, Fei Wang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 993,
+    "title": "Swatchbook Page: Iteration Log",
+    "tags": "document",
+    "heroImages": ["swatchbook08_Process-46.jpg"],
+    "description": "Wool/acrylic knit \"plated\" with polyester thread. Swatchbook includes page designs for documenting variations on a particular pattern, making explicit the iterative nature of material exploration.",
+    "author": "Elise Co, Mina Lee, Fei Wang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 994,
+    "title": "Swatchbook p03",
+    "tags": "document",
+    "heroImages": ["swatchbook04_Process-23.jpg"],
+    "description": "Acrylic and monofilament \"punch lace\". Swatchbook page with macro image, physical swatch, and listing of quantified subjective and objective material properties.",
+    "author": "Elise Co, Mina Lee, Fei Wang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 995,
+    "title": "Swatchbook p04",
+    "tags": "document",
+    "heroImages": ["swatchbook03_Process-27.jpg"],
+    "description": "Acrylic yarn and polyester/nylon thread knit together stockinette. Swatchbook page with macro image, physical swatch, and listing of quantified subjective and objective material properties.",
+    "author": "Elise Co, Mina Lee, Fei Wang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 996,
+    "title": "Swatchbook p01",
+    "tags": "document",
+    "heroImages": ["swatchbook02_Process-34.jpg"],
+    "description": "Wool open mesh knit with lace carriage technique. Swatchbook page with macro image, physical swatch, and listing of quantified subjective and objective material properties.",
+    "author": "Elise Co, Mina Lee, Fei Wang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 997,
+    "title": "Swatchbook p07",
+    "tags": "document",
+    "heroImages": ["swatchbook05_Process-18.jpg"],
+    "description": "Acrylic with dimensional short-row structure. Swatchbook page with macro image, physical swatch, and listing of quantified subjective and objective material properties.",
+    "author": "Elise Co, Mina Lee, Fei Wang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 998,
+    "title": "Swatchbook p08",
+    "tags": "document",
+    "heroImages": ["swatchbook07_Process-14.jpg"],
+    "description": "Acrylic and rayon with short-row shaped motifs. Swatchbook page with macro image, physical swatch, and listing of quantified subjective and objective material properties.",
+    "author": "Elise Co, Mina Lee, Fei Wang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 999,
+    "title": "Swatchbook p11",
+    "tags": "document",
+    "heroImages": ["swatchbook10_Process-05.jpg"],
+    "description": "Wool and lurex single-bed bulky knit. Swatchbook page with macro image, physical swatch, and listing of quantified subjective and objective material properties.",
+    "author": "Elise Co, Mina Lee, Fei Wang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 1000,
+    "title": "Swatchbook p12",
+    "tags": "document",
+    "heroImages": ["swatchbook09_Process-09.jpg"],
+    "description": "Monofilament and wool single-bed bulky knit. Swatchbook page with macro image, physical swatch, and listing of quantified subjective and objective material properties.",
+    "author": "Elise Co, Mina Lee, Fei Wang",
+    "date": "07/2019",
+    "type": "sample"
+  },
+  {
+    "id": 1001,
+    "title": "Swatchbook p13",
+    "tags": "document",
+    "heroImages": ["swatchbook06_Process-15.jpg"],
+    "description": "Wool and acrylic fair isle, knitted on bulky machine and felted. Swatchbook page with macro image, physical swatch, and listing of quantified subjective and objective material properties.",
+    "author": "Elise Co, Mina Lee, Fei Wang",
     "date": "07/2019",
     "type": "sample"
   }

@@ -2,9 +2,9 @@
   {
     "id": 1,
     "type": "project",
-    "singleIds": [4, 5, 6, 7, 8],
+    "singleIds": [984, 982, 983, 985, 986, 5, 6, 7, 8],
     "setIds": [],
-    "title": "Flyknit Prototype",
+    "title": "Flyknit",
     "description": "Analyzing \"high-tech\" Nike shoe, reverse engineering and making our own version on low-tech mechanical machines",
     "author": "Elise Co, Martin Bernard, Keda Jiang",
     "tags": "knit, prototype, garment",
@@ -77,11 +77,11 @@
       "What's the relationship between the material and the form/object it forms?",
       "What are formal parameters of digital \"space\"?"
     ],
-    "date": "07/2019",
+    "date": "08/2021",
     "external_link": "https://eliseco.github.io/sampler2_dioramas/"
   },
   {
-    "id": 4,
+    "id": 14,
     "type": "project",
     "singleIds": [121, 122, 123, 124],
     "setIds": [],
@@ -103,8 +103,61 @@
       "Can anything become a material? How?",
       "What are the implications of producing material vs something \"finished\"?"
     ],
-    "date": "07/2019",
+    "date": "08/2021",
     "external_link": "https://eliseco.github.io/sampler2_webcatalog/"
+  },
+  {
+    "id": 15,
+    "type": "project",
+    "singleIds": [401, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001],
+    "setIds": [],
+    "title": "Sample Swatchbook",
+    "description": "A sample book is a catalog of textile samples, or swatches, usually a small rectangular piece of the textile accompanied by description. The description varies according to the purpose of the sample book, and may include: pricing; technical specifications; performance characteristics; structural details. Sample books are also formally analogous to stitch libraries found in how-to textile hobby books; in those cases, the descriptions are usually instructions or patterns for replicating the swatch.\n\nSample Swatchbook is the design of a swatchbook template for the samples made in SAMPLER 1. Initially intended to frame the swatches as technical materials, in the process of designing and using the templates the team expanded their framing not just as documentation of a swatch, but also: the process of making the swatch; iterations of a particular swatch; and the identification of \"analagous materials\" to help support ideation around them as materials.",
+    "author": "Elise Co, Ray Cao, Mina Lee, Fei Wang, Meredith Xu",
+    "tags": "document, knit",
+    "heroImages": ["IMG_1772.JPG", "DSC_6970.JPG"],
+    "processImages": [
+      "IMG_4692.JPG",
+      "IMG_4691.JPG",
+      "IMG_4202.jpg",
+      "DSC_7098.JPG",
+      "DSC_7097.JPG",
+      "DSC_6961.JPG",
+      "DSC_6960.JPG",
+      "DSC_6959.JPG"
+    ],
+    "background": "cardbg2.png",
+    "pageBackground": "pagebg2.png",
+    "researchQuestions": [
+      "What’s the difference between \"technical materials\" and home-produced knitting swatches?",
+      "How can we frame \"hobby knitting\" as technical material research?"
+    ],
+    "date": "07/2019"
+  },
+  {
+    "id": 16,
+    "type": "project",
+    "singleIds": [110, 113, 115, 112, 951, 952, 953, 954],
+    "setIds": [],
+    "title": "Fractal Knits",
+    "description": "Making our own knitting machines to make knits out of other knits: Level1, Level2, etc. Recursive/fractal structures. Concentration of labor.",
+    "author": "Elise Co, Ray Cao, Yuwen Lin, An Pan, Meredith Xu",
+    "tags": "machine, recursive",
+    "heroImages": ["DSC_7010.JPG", "IMG_5036.JPG"],
+    "processImages": [
+      "IMG_4393.jpg",
+      "IMG_4685.JPG",
+      "carriage_02_Machine-45.jpg",
+      "icordmachine_level3_detail_Machine-35.jpg",
+      "icord_level1_02_Fractalknit-07.jpg"
+    ],
+    "background": "cardbg2.png",
+    "pageBackground": "pagebg2.png",
+    "researchQuestions": [
+      "What’s the difference between \"technical materials\" and home-produced knitting swatches?",
+      "How can we frame \"hobby knitting\" as technical material research?"
+    ],
+    "date": "07/2019"
   },
   {
     "id": 101,

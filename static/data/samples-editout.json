@@ -1,5 +1,14 @@
 [
   {
+    "id": 4,
+    "type": "sample",
+    "title": "Flyknit Upper, intarsia patterned",
+    "tags": "prototype, garment, knit",
+    "heroImages": ["F369EBA7-82E9-43B6-B438-7050B3ABA454.jpg"],
+    "description": "Flyknit upper with decorative intarsia, combining \"high-tech\" structure with traditional aesthetics.",
+    "author": "Elise Co, Martin Bernard, Keda Jiang"
+  },
+  {
     "id": 104,
     "type": "sample",
     "title": "AI intarsia knits, acrylic",
