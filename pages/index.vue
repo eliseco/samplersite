@@ -26,6 +26,7 @@
         :description="card.description"
         :authors="card.author"
         :background-image="card.type === 'project' ? card.background : null"
+        :prototype-link="card.prototypeLink"
       />
       <div class="wide-card">
         <h2>SAMPLES</h2>
@@ -60,6 +61,7 @@
         :background-image="
           project.type === 'project' ? project.background : null
         "
+        :prototype-link="project.prototypeLink"
       />
       <div class="wide-card">
         <h2>PROJECTS</h2>
@@ -109,6 +111,7 @@
         :description="set.description"
         :authors="set.author"
         :background-image="set.type === 'project' ? set.background : null"
+        :prototype-link="set.prototypeLink"
       />
       <SampleCard :random-background="5" />
       <div class="wide-card">
@@ -123,6 +126,8 @@
         </p>
       </div>
       <SampleCard :random-background="3" />
+      <SampleCard />
+      <SampleCard />
     </div>
   </main>
 </template>

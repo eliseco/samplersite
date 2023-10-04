@@ -29,6 +29,7 @@
         :description="card.description"
         :authors="card.author"
         :background-image="card.type === 'project' ? card.background : null"
+        :prototype-link="card.external_link"
         :active-tags="activeTags"
       />
     </div>

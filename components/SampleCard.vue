@@ -19,13 +19,21 @@
             {{ tag }}
           </div>
         </div>
-        <span class="sid">
-          {{ paddedId }}
-        </span>
+        <div class="sid-row">
+          <span class="sid">
+            {{ paddedId }}
+          </span>
+          <a v-if="prototypeLink" :href="prototypeLink" target="_blank">
+            <img src="~/static/ui-elements/prototype-small.svg" alt="" />
+            Prototype
+          </a>
+        </div>
         <div class="hero-image" :style="{ backgroundImage: hero }"></div>
         <span v-if="type !== 'sample'" class="title">
           <NuxtLink v-if="type !== 'sample'" :to="'/sets/' + sid">
-            {{ title }}
+            <span class="title">
+              {{ title }}
+            </span>
             <img src="~/static/ui-elements/link-arrow.svg" alt="" />
           </NuxtLink>
         </span>
@@ -122,6 +130,11 @@ export default {
       required: false,
       default: null,
     },
+    prototypeLink: {
+      type: String,
+      required: false,
+      default: '',
+    },
   },
   data() {
     return {
@@ -139,6 +152,8 @@ export default {
       if (!this.sid) return ''
       if (this.type === 'project') {
         return '#P' + String(this.sid).padStart(3, '0')
+      } else if (this.type === 'set') {
+        return '#S' + String(this.sid).padStart(3, '0')
       }
       return '#' + String(this.sid).padStart(4, '0')
     },
@@ -177,8 +192,11 @@ export default {
       }
     },
     parents() {
-      if (!this.type === 'sample') return []
-      return this.$store.getters['samples/getParentsBySampleId'](this.sid)
+      if (!this.type === 'sample') {
+        return this.$store.getters['samples/getParentsBySetId'](this.sid)
+      } else {
+        return this.$store.getters['samples/getParentsBySampleId'](this.sid)
+      }
     },
   },
   methods: {
@@ -271,11 +289,14 @@ export default {
   background: var(--active-green);
 }
 
-.sid {
+.sid-row {
   font-family: Roboto;
   font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 1.2px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .hero-image {
@@ -293,7 +314,7 @@ export default {
   font-size: 1.25rem;
   font-weight: 600;
   line-height-step: 50%;
-  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 a {
