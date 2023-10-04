@@ -44,9 +44,7 @@
       <div class="back-side" :style="{ backgroundImage: backgroundBack }">
         <div v-if="sid" class="description-wrapper">
           <div class="header">Description</div>
-          <div class="description">
-            {{ description }}
-          </div>
+          <div class="description">{{ description }}</div>
         </div>
 
         <div v-if="sid" class="parents-wrapper">
