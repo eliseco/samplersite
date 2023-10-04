@@ -44,12 +44,18 @@ export default {
   flex-grow: 1;
 }
 .current-image {
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding-top: 60%;
 }
 
 img {
-  width: 85%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  height: 100%;
+  max-width: 90%;
 }
 
 input {
