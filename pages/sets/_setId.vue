@@ -17,7 +17,11 @@ this page will then access the set from our store using the passed in setID, and
       <div class="information" :class="{ black: project.type === 'set' }">
         <div class="header">
           {{ project.title }}
-          <a :href="project.external_link" target="_blank">
+          <a
+            v-if="project.external_link"
+            :href="project.external_link"
+            target="_blank"
+          >
             <img src="~/static/ui-elements/prototype-large.svg" />
           </a>
         </div>
