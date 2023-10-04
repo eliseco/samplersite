@@ -70,8 +70,8 @@
     "tags": "virtual, prototype, interactive",
     "heroImages": ["Diorama_5.png"],
     "processImages": [],
-    "background": "cardbg1.png",
-    "pageBackground": "pagebg1.png",
+    "background": "cardbg3.png",
+    "pageBackground": "pagebg3.png",
     "researchQuestions": [
       "What is our digital material applied to?",
       "What's the relationship between the material and the form/object it forms?",
@@ -97,8 +97,8 @@
       "catalog_level3b.JPG"
     ],
     "processImages": [],
-    "background": "cardbg2.png",
-    "pageBackground": "pagebg2.png",
+    "background": "cardbg4.png",
+    "pageBackground": "pagebg4.png",
     "researchQuestions": [
       "Can anything become a material? How?",
       "What are the implications of producing material vs something \"finished\"?"
@@ -126,8 +126,8 @@
       "DSC_6960.JPG",
       "DSC_6959.JPG"
     ],
-    "background": "cardbg2.png",
-    "pageBackground": "pagebg2.png",
+    "background": "cardbg5.png",
+    "pageBackground": "pagebg5.png",
     "researchQuestions": [
       "What’s the difference between \"technical materials\" and home-produced knitting swatches?",
       "How can we frame \"hobby knitting\" as technical material research?"
@@ -152,8 +152,8 @@
       "icord_level1_02_Fractalknit-07.jpg",
       "icordmachine_level2_detail01_Machine-10.jpg"
     ],
-    "background": "cardbg2.png",
-    "pageBackground": "pagebg2.png",
+    "background": "cardbg1.png",
+    "pageBackground": "pagebg1.png",
     "researchQuestions": [
       "How do knitting machines work?",
       "Can we make our own latch hook?",
@@ -184,7 +184,41 @@
     ],
     "background": "",
     "pageBackground": "",
-    "researchQuestions": [],
+    "researchQuestions": [
+      "Working hands-on with knitting machines, what can we learn about labor and automation?",
+      "Can we explore structures of high-tech performance knits using manual knitting machines from the 70s?"
+    ],
+    "date": "07/2019",
+    "external_link": ""
+  },
+  {
+    "id": 102,
+    "type": "set",
+    "singleIds": [],
+    "setIds": [3, 14],
+    "title": "SAMPLER 2",
+    "description": "SAMPLER began in 2019 as a research project using machine knitting and material exploration as jumping-off point to design questions around surface, materiality, labor, automation ad high-vs-low-tech. This summer SAMPLER 2 will explore digital materiality. What is a digital material (versus a digital object or asset)? What are “material properties” of digital surfaces and substrates that go beyond physical simulation? What is “material value” in the digital world? As with SAMPLER, we will work on multiple parallel threads of investigation and analyze/synthesize as we go.\n\nThreads:\n\n“Material” properties - what are (loose) analogs to gravity, temperature, air flow and other physical phenomena that are native to digital spaces, not simulations?\nMaterial value - NFTs, manufactured scarcity, markets and alternative systems of valuation and exchange\nOne of one - the “value” of uniqueness in a world of generative systems\nAttention as material - micro and peer-to-peer attention economies decoupled from data collection\nPart Deux - extending some of the knitting-machine projects from SAMPLER into the digital realm: sneaker forms, AI-generated textile patterns, fractal “knitting”, and co-laboring with machines",
+    "author": "Elise Co, Martin Bernard, Isabelle Chaligne, Mavis Cao, Miaoqiong Huang, Nanyi Jiang, Qi Tan, Christie Wu",
+    "tags": "summer research, knit",
+    "heroImages": [
+      "sampler2_1.png",
+      "sampler2_2.png",
+      "sampler2_3.png",
+      "sampler2_4.png"
+    ],
+    "processImages": [
+      "sampler2_5.png",
+      "sampler2_6.png",
+      "sampler2_7.png",
+      "sampler2_8.png"
+    ],
+    "background": "",
+    "pageBackground": "",
+    "researchQuestions": [
+      "What do we consider a \"digital material\"?",
+      "What is the environment/context for our digital material?",
+      "Hypothesis: “attention” is a fundamental force upon digital materials in an information- and media- based society. How can we engage with this force explicitly in form?"
+    ],
     "date": "07/2019",
     "external_link": ""
   }
