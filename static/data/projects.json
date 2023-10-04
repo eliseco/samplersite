@@ -137,11 +137,11 @@
   {
     "id": 16,
     "type": "project",
-    "singleIds": [110, 113, 115, 112, 951, 952, 953, 954],
+    "singleIds": [110, 987, 988, 989, 990, 951, 952, 953, 954, 113, 115, 112],
     "setIds": [],
     "title": "Fractal Knits",
-    "description": "Making our own knitting machines to make knits out of other knits: Level1, Level2, etc. Recursive/fractal structures. Concentration of labor.",
-    "author": "Elise Co, Ray Cao, Yuwen Lin, An Pan, Meredith Xu",
+    "description": "Making our own knitting machines to make knits out of other knits: Level1, Level2, etc. \n\nRecursive/fractal structures. Concentration of labor.\n\nBy disassembling and trying to replicate mechanical knitting machines, we discover how they work. Flat-bed knitting machine was replicated as a simplified needle bed and carriage, using manufactured latch hooks. To push into completely DIY territory, the team designed and prototyped latch hooks made from laser-cut acrylic sheet, manually assembled and finished. The jumbo scale of these latch hooks prompted ideas of large-scale self-knitting environments. Tubular knit cord (I-Cord) mechanism was used as an example of the smallest self-contained latch hook knitting machine, and replicated at increasing scales to facilitate Fractal Knits.",
+    "author": "Elise Co, Ray Cao, An Pan, Meredith Xu",
     "tags": "machine, recursive",
     "heroImages": ["DSC_7010.JPG", "IMG_5036.JPG"],
     "processImages": [
@@ -149,13 +149,15 @@
       "IMG_4685.JPG",
       "carriage_02_Machine-45.jpg",
       "icordmachine_level3_detail_Machine-35.jpg",
-      "icord_level1_02_Fractalknit-07.jpg"
+      "icord_level1_02_Fractalknit-07.jpg",
+      "icordmachine_level2_detail01_Machine-10.jpg"
     ],
     "background": "cardbg2.png",
     "pageBackground": "pagebg2.png",
     "researchQuestions": [
-      "What’s the difference between \"technical materials\" and home-produced knitting swatches?",
-      "How can we frame \"hobby knitting\" as technical material research?"
+      "How do knitting machines work?",
+      "Can we make our own latch hook?",
+      "Can we make our own knitting machines? What will we knit with them?"
     ],
     "date": "07/2019"
   },
