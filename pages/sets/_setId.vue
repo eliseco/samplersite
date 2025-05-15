@@ -22,7 +22,10 @@ this page will then access the set from our store using the passed in setID, and
             :href="project.external_link"
             target="_blank"
           >
-            <img src="~/static/ui-elements/prototype-large.svg" />
+            <img
+              title="a hero image for this set or project"
+              src="~/static/ui-elements/prototype-large.svg"
+            />
           </a>
         </div>
 
@@ -267,10 +270,32 @@ h3 {
 
 .members {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
 .black {
   color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .information {
+    width: 100%;
+    padding: 0;
+    padding-bottom: var(--padding);
+  }
+  .set-wrapper {
+    align-items: center;
+  }
+  .process-image {
+    width: 100%;
+    height: unset;
+  }
 }
 </style>

@@ -45,8 +45,10 @@ export const getters = {
   getParentsBySampleId: (state, getters) => (singleId) => {
     let parents = []
     state.projects.forEach((set) => {
-      if (set.singleIds?.includes(singleId)) parents.push(set)
-      parents = parents.concat(getters.getParentsBySetId(set.id))
+      if (set.singleIds?.includes(singleId)) {
+        parents.push(set)
+        parents = parents.concat(getters.getParentsBySetId(set.id))
+      }
     })
     return [...new Set(parents)]
   },
