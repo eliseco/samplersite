@@ -22,7 +22,10 @@ this page will then access the set from our store using the passed in setID, and
             :href="project.external_link"
             target="_blank"
           >
-            <img src="~/static/ui-elements/prototype-large.svg" />
+            <img
+              title="a hero image for this set or project"
+              src="~/static/ui-elements/prototype-large.svg"
+            />
           </a>
         </div>
 
