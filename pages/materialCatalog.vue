@@ -18,6 +18,10 @@
       />
     </div>
     <div class="sample-grid">
+      <div class="card-count">
+        <span v-if="filters.tags.length"> {{ filteredCards.length }} / </span>
+        {{ totalCardCount }} SAMPLES
+      </div>
       <SampleCard
         v-for="(card, i) in filteredCards"
         :key="i"
@@ -107,10 +111,10 @@ export default {
   font-family: var(--roboto);
 }
 
-.sample-count {
+.card-count {
   font-size: 0.875rem;
   font-weight: 400;
-  padding-bottom: var(--padding);
+  padding-bottom: calc(var(--padding) / 2);
   border-bottom: 1px var(--border-light) solid;
 }
 
@@ -122,5 +126,24 @@ export default {
   grid-gap: var(--padding);
   grid-template-columns: repeat(auto-fill, var(--card-width));
   overflow-y: auto;
+}
+
+.sample-grid > .card-count {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .filters-wrapper {
+    display: none;
+  }
+
+  .sample-grid {
+    justify-content: center;
+  }
+
+  .sample-grid > .card-count {
+    height: min-content;
+    display: block;
+  }
 }
 </style>

@@ -68,4 +68,10 @@ export default {
 .active {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 900px) {
+  .content {
+    padding: 0 1em 0 1rem;
+  }
+}
 </style>

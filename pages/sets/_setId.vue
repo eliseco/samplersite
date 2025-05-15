@@ -270,10 +270,32 @@ h3 {
 
 .members {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
 .black {
   color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .information {
+    width: 100%;
+    padding: 0;
+    padding-bottom: var(--padding);
+  }
+  .set-wrapper {
+    align-items: center;
+  }
+  .process-image {
+    width: 100%;
+    height: unset;
+  }
 }
 </style>

@@ -251,4 +251,21 @@ a {
 a:hover {
   color: white;
 }
+
+@media screen and (max-width: 900px) {
+  .card-grid {
+    margin-left: 0;
+    padding: calc(var(--padding) / 2);
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .wide-card {
+    width: 100%;
+    height: unset;
+  }
+}
 </style>
