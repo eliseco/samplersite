@@ -5,7 +5,8 @@
       <div class="wide-card">
         <h1>SAMPLER</h1>
         <h4>
-          is an ongoing research initiative led by Elise Co, investigating
+          is an ongoing research initiative led by
+          <a href="mailto:elise@aeoalab.com">Elise Co</a>, investigating
           questions of materiality through collaborative making.
         </h4>
         <h4>
@@ -51,20 +52,7 @@
           >
         </p>
       </div>
-      <SampleCard
-        v-if="project"
-        :sid="project.id"
-        :type="project.type"
-        :title="project.title"
-        :hero-image="project.heroImages[0]"
-        :tags="project.tags"
-        :description="project.description"
-        :authors="project.author"
-        :background-image="
-          project.type === 'project' ? project.background : null
-        "
-        :prototype-link="project.prototypeLink"
-      />
+      <SampleCard :random-background="4" />
       <div class="wide-card">
         <h2>PROJECTS</h2>
         <p>
@@ -88,7 +76,20 @@
           >
         </p>
       </div>
-      <SampleCard :random-background="4" />
+      <SampleCard
+        v-if="project"
+        :sid="project.id"
+        :type="project.type"
+        :title="project.title"
+        :hero-image="project.heroImages[0]"
+        :tags="project.tags"
+        :description="project.description"
+        :authors="project.author"
+        :background-image="
+          project.type === 'project' ? project.background : null
+        "
+        :prototype-link="project.prototypeLink"
+      />
       <div class="wide-card">
         <h2>SETS</h2>
         <p>
@@ -133,9 +134,20 @@
           >
         </p>
       </div>
+      <SampleCard
+        v-for="(card, i) in moreCards"
+        :key="i"
+        :sid="card.id"
+        :type="card.type"
+        :title="card.title"
+        :hero-image="card.heroImages[0]"
+        :tags="card.tags"
+        :description="card.description"
+        :authors="card.author"
+        :background-image="card.type === 'project' ? card.background : null"
+        :prototype-link="card.prototypeLink"
+      />
       <SampleCard :random-background="3" />
-      <SampleCard />
-      <SampleCard />
     </div>
   </main>
 </template>
@@ -146,18 +158,23 @@ export default {
   data: () => {
     return {
       cards: [],
+      moreCards: [],
       project: null,
       set: null,
     }
   },
   mounted() {
     this.getRandomCards()
+    this.getMoreRandomCards()
     this.getProject()
     this.getSet()
   },
   methods: {
     getRandomCards() {
       this.cards = this.$store.getters['samples/getRandomCards'](2)
+    },
+    getMoreRandomCards() {
+      this.moreCards = this.$store.getters['samples/getRandomCards'](2)
     },
     getProject() {
       this.project = this.$store.getters['samples/getRandomProject']()
