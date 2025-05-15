@@ -190,10 +190,10 @@ export default {
       }
     },
     parents() {
-      if (!this.type === 'sample') {
-        return this.$store.getters['samples/getParentsBySetId'](this.sid)
-      } else {
+      if (this.type === 'sample') {
         return this.$store.getters['samples/getParentsBySampleId'](this.sid)
+      } else {
+        return this.$store.getters['samples/getParentsBySetId'](this.sid)
       }
     },
   },
