@@ -69,6 +69,7 @@ input:checked ~ .indicator {
 
 input:disabled ~ .label,
 input:disabled ~ .indicator {
-  opacity: 50%;
+  color: gray;
+  border-color: gray;
 }
 </style>
