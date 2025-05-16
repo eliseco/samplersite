@@ -1,8 +1,10 @@
 # samplersite
 
-A deployment of the prototype can be found [here](https://main--splendorous-pika-2c162a.netlify.app/).
+This site is deployed with netlify at [https://metasampler.net/](https://metasampler.net/)
 
 ## Build Setup
+
+**uses Node v16.20.2.**
 
 ```bash
 # install dependencies
