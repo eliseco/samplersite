@@ -162,6 +162,33 @@
     "date": "07/2019"
   },
   {
+    "id": 17,
+    "type": "project",
+    "singleIds": [1002, 1003, 1004, 1005, 1006, 1007, 1008],
+    "setIds": [],
+    "title": "Redefining Camouflage",
+    "description": "A myriad of drawings turn to print doll costumes. The content, scale, repetition, composition and colors of drawings vary and they are to be blended to the background. The content of the drawing would matter for the camouflage. Starting from the unrelatable characters to the relatable features like cars or grasses, based on the minimized number of colors, the relativity resonates with the background. Furthermore, as human brains tend to simplify complex visual factors, the size of patterns render the whole composition into illusive entities. For the sake of depth, the saturation and brightness of patterns affect camouflage in a 3 dimensional sense. In addition, considering universal usage of military camouflage in any environment, different patterns from the same relatable source are mingled with the original photograph into a camouflage composition. In spite of these different spectrums, the digitality or physicality of camouflage apparently looks different because the digital output is only affected by pixels but the physical output is affected not only by the features of composition but also by the outdoor factors like shadows or the sunlight. ",
+    "author": "Elise Co, Jaehyun Kim",
+    "tags": "Physical_Space, Digital Materiality",
+    "heroImages": ["HeroImage_01.jpg", "HeroImage_02.jpg"],
+    "processImages": [
+      "Process_00.jpg",
+      "Process_01.jpg",
+      "Process_02.jpg",
+      "Process_03.jpg",
+      "Process_04.jpg"
+    ],
+    "background": "cardbg1.png",
+    "pageBackground": "pagebg1.png",
+    "researchQuestions": [
+      "Does camouflage have something to do with the content of drawings?",
+      "What visual factors make the composition work as camouflage?",
+      "Does the mixture of content including pictures of background work as camouflage?"
+    ],
+    "date": "07/2025"
+  },
+
+  {
     "id": 101,
     "type": "set",
     "singleIds": [],

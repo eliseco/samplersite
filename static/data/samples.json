@@ -675,5 +675,75 @@
     "author": "Elise Co, Mina Lee, Fei Wang",
     "date": "07/2019",
     "type": "sample"
+  },
+  {
+    "id": 1002,
+    "title": "Backdrop Making Station",
+    "tags": "Physical Space, Digital Material",
+    "heroImages": ["Card01_Digital_2400x2550.png"],
+    "description": "A background based on a photo taken in Pasadena. It shows how camouflage is reliable on the environment.",
+    "author": "Elise Co, Jaehyun Kim",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1003,
+    "title": "Digital Camouflage 01",
+    "tags": "Digital Materiality",
+    "heroImages": ["Card02_Digital_2400x2550.png"],
+    "description": "A digital pattern with drawings of relatable content such as plants or grasses from the background picture.",
+    "author": "Elise Co, Jaehyun Kim",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1004,
+    "title": "Digital Camouflage 02",
+    "tags": "Digital Materiality",
+    "heroImages": ["Card03_Digital_2400x2550.png"],
+    "description": "A digital pattern with a myriad of minimized drawings.",
+    "author": "Elise Co, Jaehyun Kim",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1005,
+    "title": "Digital Camouflage 03",
+    "tags": "Digital Materiality",
+    "heroImages": ["Card04_Digital_2400x2550.png"],
+    "description": "A digital pattern with the combination of minimized drawings and photos.",
+    "author": "Elise Co, Jaehyun Kim",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1006,
+    "title": "Physical Camouflage 01",
+    "tags": "Physical Space, Digital Material",
+    "heroImages": ["Card05_Digital_2400x2550.png"],
+    "description": "A printed pattern with drawings of relatable content put on a print doll. It simulates how the patterned paper physically works with the background.",
+    "author": "Elise Co, Jaehyun Kim",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1007,
+    "title": "Physical Camouflage 02",
+    "tags": "Physical Space, Digital Material",
+    "heroImages": ["Card06_Digital_2400x2550.png"],
+    "description": "A printed pattern with a myriad of minimized drawings put on a print doll. It simulates how the patterned paper physically works with the background.",
+    "author": "Elise Co, Jaehyun Kim",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1008,
+    "title": "Physical Camouflage 03",
+    "tags": "Physical Space, Digital Material",
+    "heroImages": ["Card07_Digital_2400x2550.png"],
+    "description": "A printed pattern with the combination of minimized drawings and photos put on a print doll. It simulates how the patterned paper physically works with the background.",
+    "author": "Elise Co, Jaehyun Kim",
+    "date": "07/2025",
+    "type": "sample"
   }
 ]
