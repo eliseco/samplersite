@@ -901,7 +901,7 @@
   {
     "id": 1024,
     "title": "Digital Loom",
-    "tags": "digital material, software, physical space, prototype",
+    "tags": "software, physical space, prototype",
     "heroImages": ["Digital_Weaving_Station_Ver1.jpg"],
     "description": "This project began with an exploration of slit-scan photography, where realistic videos and footage were transformed into visuals resembling woven threads. I then started experimenting with simulating slit-scan photography in TouchDesigner. During this process, I also incorporated a technique called Stream Diffusion, which enables real-time generative effects within TD. In the final stage, I added a feature that detects ambient brightness from the camera to control when the program runs or stops, and built a UI system to adjust the details of the digital weaving, activate AI modules, and modify prompts.",
     "author": "Hannan Zhang, Elise Co",
