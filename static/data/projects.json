@@ -189,6 +189,42 @@
   },
 
   {
+    "id": 18,
+    "type": "project",
+    "singleIds": [1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017],
+    "setIds": [],
+    "title": "Reconstructed Braid",
+    "description": "This project builds on a braiding method that preserves the edges of a single strip of material: two straight cuts are made in the middle without cutting its edges, dividing the material into three bands that can be braided in a specific way. Building on this structure, the project explores how different recursion levels of braiding can deconstruct and reconstruct various source materials.",
+    "author": "Elise Co, Jiaying Su, Iris Xu, Zhengyu Zhao",
+    "tags": "Braid, Paper, Nylon_Knit, Mapping",
+    "heroImages": [
+      "JiayingHeroImage1.jpg",
+      "JiayingHeroImage3.PNG",
+      "JiayingHeroImage2.jpg"
+    ],
+    "processImages": [
+      "JiayingProcess1.jpg",
+      "JiayingProcess2.jpg",
+      "JiayingProcess3.jpg",
+      "JiayingProcess4.jpg",
+      "JiayingProcess5.jpg",
+      "JiayingProcess6.jpg",
+      "JiayingProcess7.jpg",
+      "JiayingProcess8.jpg",
+      "JiayingProcess9.PNG",
+      "JiayingProcess10.jpg"
+    ],
+    "background": "cardbg1.png",
+    "pageBackground": "pagebg1.png",
+    "researchQuestions": [
+      "What possibilities emerge when applying higher levels of recursion?",
+      "Is it possible to establish a clear set of rules for remapping complete images onto braids?",
+      "Can we develop a program to automatically generate remap diagrams?"
+    ],
+    "date": "08/2025"
+  },
+
+  {
     "id": 101,
     "type": "set",
     "singleIds": [],

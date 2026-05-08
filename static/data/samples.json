@@ -745,5 +745,96 @@
     "author": "Elise Co, Jaehyun Kim",
     "date": "07/2025",
     "type": "sample"
+  },
+
+  {
+    "id": 1009,
+    "title": "Prototype of Braids",
+    "tags": "Braid, Nylon_Knit",
+    "heroImages": ["JiayingCard1.jpg"],
+    "description": "Level 1 and Level 2 braids woven from nylon fabric. These are the first prototypes exploring this braided structure within the project.",
+    "author": "Jiaying Su",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1010,
+    "title": "Prototype of Recursion",
+    "tags": "Braid, Paper",
+    "heroImages": ["JiayingCard7.jpg"],
+    "description": "The two paper-woven braids on the left show Level 1 samples before and after braiding, while the one on the right extends the same structure recursively to Level 3.",
+    "author": "Jiaying Su",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1011,
+    "title": "Level 1 Remap",
+    "tags": "Braid, Paper",
+    "heroImages": ["JiayingCard2.jpg"],
+    "description": "Source images are cropped and remapped onto Level 1 paper strips (middle and right). Once braided, they form a braid carrying a complete image on each side (left).",
+    "author": "Jiaying Su",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1012,
+    "title": "Level 2 Remap",
+    "tags": "Braid, Paper",
+    "heroImages": ["JiayingCard3.jpg"],
+    "description": "Source images are cropped and remapped onto Level 2 paper strips (right). Once braided, they form a braid carrying a complete image on each side (middle).",
+    "author": "Jiaying Su",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1013,
+    "title": "Deconstruction through Braid 01",
+    "tags": "Braid, Paper",
+    "heroImages": ["JiayingCard4.jpg"],
+    "description": "The source image on the right is directly applied to the pre-braiding strips, producing the Level 2 sample shown on the left.",
+    "author": "Jiaying Su, Zhengyu Zhao",
+    "date": "08/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1014,
+    "title": "Deconstruction through Braid 02",
+    "tags": "Braid, Paper",
+    "heroImages": ["JiayingCard5.jpg"],
+    "description": "The source image on the right is directly applied to the pre-braiding strips, producing the Level 2 sample shown on the left.",
+    "author": "Jiaying Su, Iris Xu",
+    "date": "08/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1015,
+    "title": "Deconstruction through Braid 03",
+    "tags": "Braid, Paper",
+    "heroImages": ["JiayingCard6.jpg"],
+    "description": "The source image on the right is directly applied to the pre-braiding strips, producing the Level 2 sample shown on the left.",
+    "author": "Elise Co, Jiaying Su",
+    "date": "08/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1016,
+    "title": "Level 2 Remap Diagram",
+    "tags": "Braid, Mapping",
+    "heroImages": ["JiayingCard9.jpg"],
+    "description": "Braid a Level 2 sample with continuous shapes on both sides traced and numbered in red and black. When unfolded, this produces a diagram that splits the source image into specific shapes and arranges them across both sides of the Level 2 braids.",
+    "author": "Jiaying Su",
+    "date": "08/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1017,
+    "title": "Level 2 Remap Diagram of Dora",
+    "tags": "Braid, Mapping",
+    "heroImages": ["JiayingCard8.jpg"],
+    "description": "When braided into a Level 2 braid, this diagram forms a continuous pattern of Picasso’s Weeping Woman on one side and a continuous portrait of Dora, the painting’s model, on the other.",
+    "author": "Jiaying Su",
+    "date": "08/2025",
+    "type": "sample"
   }
 ]
