@@ -907,5 +907,254 @@
     "author": "Hannan Zhang, Elise Co",
     "date": "08/2025",
     "type": "sample"
+  },
+
+  {
+    "id": 1030,
+    "title": "BlurredPatio",
+    "tags": "Spolia, Digital Material",
+    "heroImages": ["BlurredPatio.jpg"],
+    "description": "Material created through 2D repetition of a scene: a blurred patio.",
+    "author": "Sunny Sinhye Kim",
+    "date": "07/2024",
+    "type": "sample"
+  },
+  {
+    "id": 1031,
+    "title": "Graffiti",
+    "tags": "Spolia, Digital Material",
+    "heroImages": ["Graffiti.jpg"],
+    "description": "Material created through 2D repetition of an object: a graffiti.",
+    "author": "Hana Azab",
+    "date": "07/2024",
+    "type": "sample"
+  },
+  {
+    "id": 1032,
+    "title": "M51window2",
+    "tags": "Spolia, Digital Material",
+    "heroImages": ["M51window2.jpg"],
+    "description": "Material created through 2D repetition of an object: a window.",
+    "author": "Elise Co",
+    "date": "07/2024",
+    "type": "sample"
+  },
+  {
+    "id": 1033,
+    "title": "SkyandPalms",
+    "tags": "Spolia, Digital Material",
+    "heroImages": ["SkyandPalms.jpg"],
+    "description": "Material created through 2D repetition of a scene: the sky and palms.",
+    "author": "Sunny Sinhye Kim",
+    "date": "07/2024",
+    "type": "sample"
+  },
+  {
+    "id": 1034,
+    "title": "Skylight",
+    "tags": "Spolia, Digital Material",
+    "heroImages": ["Skylight.jpg"],
+    "description": "Material created through 2D repetition of a scene: the skylight.",
+    "author": "Mika Meihan Hu",
+    "date": "07/2024",
+    "type": "sample"
+  },
+  {
+    "id": 1035,
+    "title": "Stairs",
+    "tags": "Spolia, Digital Material",
+    "heroImages": ["Stairs.jpg"],
+    "description": "Material created through 2D repetition of objects: stairs.",
+    "author": "Minyoung Joo",
+    "date": "07/2024",
+    "type": "sample"
+  },
+  {
+    "id": 1036,
+    "title": "VendingMachine",
+    "tags": "Spolia, Digital Material",
+    "heroImages": ["VendingMachine.jpg"],
+    "description": "Material created through 2D repetition of an object: a vending machine.",
+    "author": "Minyoung Joo",
+    "date": "07/2024",
+    "type": "sample"
+  },
+  {
+    "id": 1037,
+    "title": "Code1_level2",
+    "tags": "Spolia, Digital Material, Level 2",
+    "heroImages": ["Code1_level2.jpg"],
+    "description": "Material created through repetition of images of physical space that include level 1 (repeating) patterns.",
+    "author": "Iris Xiaomeng Xu",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1038,
+    "title": "Code2_level2",
+    "tags": "Spolia, Digital Material, Level 2",
+    "heroImages": ["Code2_level2.jpg"],
+    "description": "Material created through repetition of images of physical space that include level 1 (repeating) patterns.",
+    "author": "Yiqi Zhang",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1039,
+    "title": "Knit1_level2",
+    "tags": "Spolia, Digital Material, Level 2",
+    "heroImages": ["Knit1_level2.jpg"],
+    "description": "Material created through repetition of images of physical space that include level 1 (repeating) patterns.",
+    "author": "Elise Co",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1040,
+    "title": "Knit2_level2",
+    "tags": "Spolia, Digital Material, Level 2",
+    "heroImages": ["Knit2_level2.jpg"],
+    "description": "Material created through repetition of images of physical space that include level 1 (repeating) patterns.",
+    "author": "Elise Co",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1041,
+    "title": "Pencils_level2",
+    "tags": "Spolia, Digital Material, Level 2",
+    "heroImages": ["Pencils_level2.jpg"],
+    "description": "Material created through repetition of images of physical space that include level 1 (repeating) patterns.",
+    "author": "Sunny Sinhye Kim",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1042,
+    "title": "Screens_level2",
+    "tags": "Spolia, Digital Material, Level 2",
+    "heroImages": ["Screens_level2.jpg"],
+    "description": "Material created through repetition of images of physical space that include level 1 (repeating) patterns.",
+    "author": "Minyoung Joo",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1043,
+    "title": "Shirt_level2",
+    "tags": "Spolia, Digital Material,Level 2",
+    "heroImages": ["Shirt_level2.jpg"],
+    "description": "Material created through repetition of images of physical space that include level 1 (repeating) patterns.",
+    "author": "Minyoung Joo",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1044,
+    "title": "Table_level2",
+    "tags": "Spolia, Digital Material, Level 2",
+    "heroImages": ["Table_level2.jpg"],
+    "description": "Material created through repetition of images of physical space that include level 1 (repeating) patterns.",
+    "author": "Sunny Sinhye Kim",
+    "date": "07/2025",
+    "type": "sample"
+  },
+  {
+    "id": 1047,
+    "title": "Spolia Lounge Library",
+    "tags": "Spolia, Physical Object",
+    "heroImages": ["SpoliaLoungeLibrary.jpg"],
+    "description": "Library of books related to textile computation, repetition and consciousness. Books and small goods custom covered with material.",
+    "author": "Elise Co, Sunny Sinhye Kim, Minyoung Joo, Zhengyu Zhao, Hana Azab, Mika Meihan Hu",
+    "date": "07/2024",
+    "type": "sample"
+  },
+
+  {
+    "id": 1048,
+    "title": "Knit Cable Covers",
+    "tags": "Knit, Wool",
+    "heroImages": ["KnitCableCovers.jpg"],
+    "description": "Machine-knit tubes to cover electric cables. Checker patterns are often used to denote digital surfaces without a texture map.",
+    "author": "Elise Co",
+    "date": "07/2024",
+    "type": "sample"
+  },
+
+  {
+    "id": 1049,
+    "title": "Spolia Loom",
+    "tags": "Tool, Software, Spolia",
+    "heroImages": ["SpoliaLoom.jpg"],
+    "description": "The custom software interface SPOLIA LOOM allows a person to select portions of an image and assemble the selected samples into patterns. The mechanism was partially inspired by the common ancient Roman practice of taking material elements - spolia, or /“spoils/” - from one structure and using them in another.",
+    "author": "Elise Co",
+    "date": "07/2024",
+    "type": "sample"
+  },
+
+  {
+    "id": 1050,
+    "title": "Digital Material Surface",
+    "tags": "Spolia, Physical Space, Digital Material",
+    "heroImages": ["DigitalMaterialSurface.jpg"],
+    "description": "Digital materials become physical when they manifest in the physical world. This display provides a surface for digital materials in the Spolia Lounge.",
+    "author": "Elise Co, Sunny Sinhye Kim, Minyoung Joo, Zhengyu Zhao, Hana Azab, Mika Meihan Hu",
+    "date": "07/2024",
+    "type": "sample"
+  },
+
+  {
+    "id": 1051,
+    "title": "Spolia Jacket",
+    "tags": "Spolia, Physical Object",
+    "heroImages": ["SpoliaJacket.jpg"],
+    "description": "Garment printed with digital material samples. Patterns are derived from physical objects through successive levels of repetition and transformation.",
+    "author": "Elise Co, Jeanie Joe",
+    "date": "07/2025",
+    "type": "sample"
+  },
+
+  {
+    "id": 1052,
+    "title": "Digital Spolia Shirt",
+    "tags": "Spolia, Physical Object, Digital Material",
+    "heroImages": ["SpoliaCastShirt.jpg"],
+    "description": "Digital materials become physical when projected onto a surface. Dynamic animated patterns are cast onto the garment, making them appear native to the fabric.",
+    "author": "Elise Co, Iris Xiaomeng Xu, Cici Jie Cui, Han Zhang, Ruby Qiaoru Li, Levia Qianyi Luo, Jiaying Su",
+    "date": "07/2026",
+    "type": "sample"
+  },
+
+  {
+    "id": 1053,
+    "title": "Spolia Shirt",
+    "tags": "Spolia, Physical Object",
+    "heroImages": ["SpoliaShirt.jpg"],
+    "description": "Garment printed with digital material samples. Patterns are derived from physical objects through successive levels of repetition and transformation.",
+    "author": "Elise Co, Jeanie Joe",
+    "date": "07/2025",
+    "type": "sample"
+  },
+
+  {
+    "id": 1054,
+    "title": "Spolia Stools 1",
+    "tags": "Spolia, Physical Object",
+    "heroImages": ["SpoliaStool1.jpg"],
+    "description": "Stools printed with digital material samples. Patterns are derived from physical objects through successive levels of repetition and transformation.",
+    "author": "Elise Co, Iris Xiaomeng Xu, Yiqi Zhang, Cici Jie Cui",
+    "date": "07/2025",
+    "type": "sample"
+  },
+
+  {
+    "id": 1055,
+    "title": "Spolia Stools 2",
+    "tags": "Spolia, Physical Object",
+    "heroImages": ["SpoliaStool2.jpg"],
+    "description": "Stools printed with digital material samples. Patterns are derived from physical objects through successive levels of repetition and transformation.",
+    "author": "Elise Co, Jaehyun Kim, Hannan Zhang, Zhengyu Zhao",
+    "date": "07/2025",
+    "type": "sample"
   }
 ]

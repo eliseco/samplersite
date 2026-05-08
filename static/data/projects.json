@@ -250,6 +250,34 @@
   },
 
   {
+    "id": 20,
+    "type": "project",
+    "singleIds": [
+      1047, 1048, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1030, 1031, 1032,
+      1037, 1038, 1039
+    ],
+    "setIds": [],
+    "title": "Spolia Lounge",
+    "description": "What is material? How does our thinking and behavior change when we perceive something as a material rather than an object or singular entity?\n\nAny object can become a “material” through multiplication and quantity. Simple repetition implies endlessness, even when the surface we see is finite. This can radically change how we perceive an object. New patterns emerge in the repetition and previously unnoticed details begin to catch our eye. Notice, too, how our sense of scale becomes warped when confronted with repetition. Repetition is also the basis for practice, for muscle memory and the ability to do something fluently: that is, for craft.\n\nThe custom software interface SPOLIA LOOM, used to create the patterns in this space, allows a person to select portions of an image and assemble the selected samples into patterns. The mechanism was partially inspired by the common ancient Roman practice of taking material elements - spolia, or “spoils” - from one structure and using them in another.\n\nSPOLIA LOOM was developed by Professor Elise Co during a two-month fellowship at the American Academy in Rome in fall 2023, with the generous support of David and Mary Martin and MADWorkshop.",
+    "author": "Elise Co, Benjamin Borden, Hana Azab, Mika Hu, Minyoung Joo, Sunny Kim, Zhengyu Zhao, Jeanie Joe, Mabel Moore, Yiqi Zhang, Iris Xu, Cici Cui, Jaehyun Kim, Hannan Zhang, Jiaying Su, Han Zhang, Ruby Li, Levia Luo",
+    "tags": "physical space, apolia, digital materiality",
+    "heroImages": ["Digital_Weaving_Station_Ver2.jpg"],
+    "processImages": [
+      "Real_video_pattern.png",
+      "Work_interface1.png",
+      "Work_interface2.png"
+    ],
+    "background": "cardbg5.png",
+    "pageBackground": "pagebg5.png",
+    "researchQuestions": [
+      "What if we design our making spaces to mediate our state of mind in specific ways?",
+      "Can we represent real weaving in a digital form?",
+      "Can we create our own digital weaving machines, and what will we weave with them?"
+    ],
+    "date": "07/2025"
+  },
+
+  {
     "id": 101,
     "type": "set",
     "singleIds": [],
