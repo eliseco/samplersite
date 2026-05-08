@@ -178,8 +178,8 @@
       "Process_03.jpg",
       "Process_04.jpg"
     ],
-    "background": "cardbg1.png",
-    "pageBackground": "pagebg1.png",
+    "background": "cardbg2.png",
+    "pageBackground": "pagebg2.png",
     "researchQuestions": [
       "Does camouflage have something to do with the content of drawings?",
       "What visual factors make the composition work as camouflage?",
@@ -214,14 +214,39 @@
       "JiayingProcess9.PNG",
       "JiayingProcess10.jpg"
     ],
-    "background": "cardbg1.png",
-    "pageBackground": "pagebg1.png",
+    "background": "cardbg3.png",
+    "pageBackground": "pagebg3.png",
     "researchQuestions": [
       "What possibilities emerge when applying higher levels of recursion?",
       "Is it possible to establish a clear set of rules for remapping complete images onto braids?",
       "Can we develop a program to automatically generate remap diagrams?"
     ],
     "date": "08/2025"
+  },
+
+  {
+    "id": 19,
+    "type": "project",
+    "singleIds": [1024, 1018, 1019, 1020, 1021, 1022, 1023],
+    "setIds": [],
+    "title": "Mediated Weaving Station",
+    "description": "When we engage in the process of craft, including manual textile production methods like weaving, we are often able to enter flow state, identified by Mihaly Csikszentmihalyi as a mental state of complete immersion, focus and ease - where action and awareness merge. How might we design making spaces specifically around mental states such as flow state? Are there other states of mind to be found? This mediated weaving station incorporates the custom software Digital Loom, in a personal physical making space that keeps focus only on the weaving, both physical and digital. Within this controlled area, the weaver is aware of both the piece they are directly (physically) weaving, and the corresponding digital textile being generated based on their movements.",
+    "author": "Elise Co, Hannan Zhang",
+    "tags": "consciousnes, physical space, software, prototype",
+    "heroImages": ["Digital_Weaving_Station_Ver2.jpg"],
+    "processImages": [
+      "Real_video_pattern.png",
+      "Work_interface1.png",
+      "Work_interface2.png"
+    ],
+    "background": "cardbg4.png",
+    "pageBackground": "pagebg4.png",
+    "researchQuestions": [
+      "What if we design our making spaces to mediate our state of mind in specific ways?",
+      "Can we represent real weaving in a digital form?",
+      "Can we create our own digital weaving machines, and what will we weave with them?"
+    ],
+    "date": "07/2025"
   },
 
   {
